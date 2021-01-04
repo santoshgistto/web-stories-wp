@@ -26,6 +26,10 @@ import classnames from 'classnames';
 import { useUnits } from '../../../units';
 import { useStory } from '../../../app';
 import { getDefinitionForType } from '../../../elements';
+import {
+  FILL_TEXT_INHERENT_PADDING,
+  BACKGROUND_TEXT_MODE,
+} from '../../../constants';
 import useElementOutOfCanvas from '../utils/useElementOutOfCanvas';
 
 const EMPTY_HANDLES = [];
@@ -154,9 +158,12 @@ function useSingleSelectionResize({
       const [deltaX, deltaY] = frame.translate;
       const newWidth = editorToDataX(editorWidth);
       const newHeight = editorToDataY(editorHeight);
+      const isBgFillText =
+        selectedElement?.backgroundTextMode === BACKGROUND_TEXT_MODE.FILL;
       const properties = {
-        width: newWidth,
-        height: newHeight,
+        width: newWidth - (isBgFillText ? FILL_TEXT_INHERENT_PADDING.x * 2 : 0),
+        height:
+          newHeight - (isBgFillText ? FILL_TEXT_INHERENT_PADDING.y * 2 : 0),
         x: selectedElement.x + editorToDataX(deltaX),
         y: selectedElement.y + editorToDataY(deltaY),
       };
