@@ -32,6 +32,7 @@ import { useAPI } from '../../app/api';
 import { useConfig } from '../config';
 import createError from '../../utils/createError';
 import useTranscodeVideo from '../media/utils/useTranscodeVideo';
+import useTranscodeImage from '../media/utils/useTranscodeImage';
 import { MEDIA_TRANSCODING_MAX_FILE_SIZE } from '../../constants';
 
 function useUploader() {
@@ -52,6 +53,10 @@ function useUploader() {
     () => [...allowedImageMimeTypes, ...allowedVideoMimeTypes],
     [allowedImageMimeTypes, allowedVideoMimeTypes]
   );
+  const {
+    generateImage,
+  } = useTranscodeImage();
+
   const {
     isFeatureEnabled,
     isTranscodingEnabled,
@@ -163,13 +168,24 @@ function useUploader() {
         'Media'
       );
 
+
+      const trackTiming1 = getTimeTracker(
+        'image transcoding',
+        'editor',
+        'Media'
+      );
+
+
       // Transcoding is enabled, let's give it a try!
       try {
         // TODO: Only transcode & optimize video if needed (criteria TBD).
+        const newFileImage = await generateImage(file);
+        console.log(newFileImage);
+        trackTiming1();
         const newFile = await transcodeVideo(file);
         trackTiming();
         additionalData.media_source = 'video-optimization';
-        return uploadMedia(newFile, additionalData);
+        return uploadMedia(newFileImage, additionalData);
       } catch (err) {
         trackTiming();
         trackError('video transcoding', err.message);
