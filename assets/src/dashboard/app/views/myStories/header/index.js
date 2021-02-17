@@ -166,10 +166,11 @@ function Header({
   return (
     <>
       <PageHeading
-        defaultTitle={__('My Stories', 'web-stories')}
+        heading={__('My Stories', 'web-stories')}
         searchPlaceholder={__('Search Stories', 'web-stories')}
         searchOptions={searchOptions}
         handleTypeaheadChange={debouncedTypeaheadChange}
+        showTypeahead
         searchValue={search.keyword}
       >
         {HeaderToggleButtons}
