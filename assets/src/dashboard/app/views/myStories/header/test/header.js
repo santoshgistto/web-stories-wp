@@ -140,7 +140,7 @@ describe('My Stories <Header />', function () {
   });
 
   it('should have 3 toggle buttons, one for each status that say how many items belong to that status', function () {
-    const { getByText, queryByText } = renderWithProviders(
+    const { queryByText, getByRole } = renderWithProviders(
       <LayoutProvider>
         <Header
           filter={STORY_STATUSES[0]}
@@ -160,17 +160,27 @@ describe('My Stories <Header />', function () {
         />
       </LayoutProvider>
     );
-    expect(getByText('All Stories')).toBeInTheDocument();
-    expect(getByText('19')).toBeInTheDocument();
-    expect(getByText('Drafts')).toBeInTheDocument();
-    expect(getByText('9')).toBeInTheDocument();
-    expect(getByText('Published')).toBeInTheDocument();
-    expect(getByText('10')).toBeInTheDocument();
+
+    const allStoriesButton = getByRole('button', {
+      name: /Filter stories by All Stories/,
+    });
+
+    const draftsButton = getByRole('button', {
+      name: /Filter stories by Drafts/,
+    });
+    const publishedButton = getByRole('button', {
+      name: /Filter stories by Published/,
+    });
+
+    expect(allStoriesButton).toHaveTextContent('All Stories19');
+    expect(draftsButton).toHaveTextContent('Drafts9');
+    expect(publishedButton).toHaveTextContent('Published10');
+
     expect(queryByText('Private')).not.toBeInTheDocument();
   });
 
   it('should show the private tab only when there are private stories.', function () {
-    const { getByText } = renderWithProviders(
+    const { getByRole } = renderWithProviders(
       <LayoutProvider>
         <Header
           filter={STORY_STATUSES[0]}
@@ -191,18 +201,29 @@ describe('My Stories <Header />', function () {
         />
       </LayoutProvider>
     );
-    expect(getByText('All Stories')).toBeInTheDocument();
-    expect(getByText('19')).toBeInTheDocument();
-    expect(getByText('Drafts')).toBeInTheDocument();
-    expect(getByText('9')).toBeInTheDocument();
-    expect(getByText('Published')).toBeInTheDocument();
-    expect(getByText('10')).toBeInTheDocument();
-    expect(getByText('Private')).toBeInTheDocument();
-    expect(getByText('2')).toBeInTheDocument();
+
+    const allStoriesButton = getByRole('button', {
+      name: /Filter stories by All Stories/,
+    });
+
+    const draftsButton = getByRole('button', {
+      name: /Filter stories by Drafts/,
+    });
+    const publishedButton = getByRole('button', {
+      name: /Filter stories by Published/,
+    });
+    const privateButton = getByRole('button', {
+      name: /Filter stories by private/,
+    });
+
+    expect(allStoriesButton).toHaveTextContent('All Stories19');
+    expect(draftsButton).toHaveTextContent('Drafts9');
+    expect(publishedButton).toHaveTextContent('Published10');
+    expect(privateButton).toHaveTextContent('Private2');
   });
 
   it('should not show the private tab even if there are private stories when the user does not have permission.', function () {
-    const { getByText, queryByText } = renderWithProviders(
+    const { getByRole, queryByText } = renderWithProviders(
       <LayoutProvider>
         <Header
           filter={STORY_STATUSES[0]}
@@ -228,12 +249,19 @@ describe('My Stories <Header />', function () {
         },
       }
     );
-    expect(getByText('All Stories')).toBeInTheDocument();
-    expect(getByText('19')).toBeInTheDocument();
-    expect(getByText('Drafts')).toBeInTheDocument();
-    expect(getByText('9')).toBeInTheDocument();
-    expect(getByText('Published')).toBeInTheDocument();
-    expect(getByText('10')).toBeInTheDocument();
+    const allStoriesButton = getByRole('button', {
+      name: /Filter stories by All Stories/,
+    });
+
+    const draftsButton = getByRole('button', {
+      name: /Filter stories by Drafts/,
+    });
+    const publishedButton = getByRole('button', {
+      name: /Filter stories by Published/,
+    });
+    expect(allStoriesButton).toHaveTextContent('All Stories19');
+    expect(draftsButton).toHaveTextContent('Drafts9');
+    expect(publishedButton).toHaveTextContent('Published10');
     expect(queryByText('Private')).not.toBeInTheDocument();
   });
 
