@@ -24,7 +24,7 @@ import stylisRTLPlugin from 'stylis-plugin-rtl';
 /**
  * Internal dependencies
  */
-import { ThemeGlobals, useFocusOut } from '../../../design-system';
+import { ThemeGlobals } from '../../../design-system';
 import { useConfig } from '../../app/config';
 import { Z_INDEX } from '../canvas/layout';
 import { Navigator } from './navigator';
@@ -55,8 +55,6 @@ export const HelpCenter = () => {
   const ref = useRef(null);
   const { enableQuickTips } = useFeatures();
   const { state, actions } = useHelpCenter();
-
-  useFocusOut(ref, actions.close, []);
 
   // Set Focus on the expanded companion
   // whenever it opens
