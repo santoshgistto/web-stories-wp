@@ -151,7 +151,7 @@ function StoriesView({
   );
 
   const handleDeleteStory = useCallback((story) => {
-    setContextMenuId(-1);
+    // setContextMenuId(-1);
     setActiveStory(story);
     setActiveDialog(ACTIVE_DIALOG_DELETE_STORY);
   }, []);

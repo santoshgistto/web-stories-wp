@@ -31,7 +31,7 @@ function useFocusOut(ref, callback, deps) {
     const onFocusOut = (evt) => {
       // If focus moves somewhere outside the node, callback time!
       if (evt.relatedTarget && !node.contains(evt.relatedTarget)) {
-        callback();
+        callback(evt);
       }
     };
 
@@ -43,7 +43,7 @@ function useFocusOut(ref, callback, deps) {
       const isInDocument = node.ownerDocument.contains(evt.target);
       const isInNode = node.contains(evt.target);
       if (!isInNode && isInDocument && !isMouseDownInNode.current) {
-        callback();
+        callback(evt);
       }
     };
 

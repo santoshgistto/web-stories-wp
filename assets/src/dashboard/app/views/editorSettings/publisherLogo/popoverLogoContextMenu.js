@@ -46,16 +46,28 @@ function PopoverLogoContextMenu({
   const isPopoverMenuOpen = contextMenuId.value === publisherLogo.id;
   const tabIndex = isActive ? 0 : -1;
 
-  const onMoreButtonSelected = useCallback(
+  const handleDisplayContextMenuById = useCallback(
     (openMenuLogoId) => contextMenuId.set(openMenuLogoId),
     [contextMenuId]
   );
 
   const handleFocusOut = useCallback(() => {
-    if (contextMenuId.value === activePublisherLogo) {
-      onMoreButtonSelected(-1);
+    console.log('focus out', {
+      contextMenuId: contextMenuId.value,
+      publisherLogoId: publisherLogo.id,
+      activePublisherLogo,
+    });
+
+    if (contextMenuId.value === publisherLogo.id) {
+      console.log('hiding menu');
+      handleDisplayContextMenuById(-1);
     }
-  }, [activePublisherLogo, contextMenuId.value, onMoreButtonSelected]);
+  }, [
+    activePublisherLogo,
+    publisherLogo.id,
+    contextMenuId.value,
+    handleDisplayContextMenuById,
+  ]);
 
   useFocusOut(popoverMenuContainerRef, handleFocusOut, [contextMenuId]);
 
@@ -74,7 +86,9 @@ function PopoverLogoContextMenu({
         onClick={(e) => {
           e.preventDefault();
           onMenuItemToggle(isPopoverMenuOpen ? null : publisherLogo.id);
-          onMoreButtonSelected(isPopoverMenuOpen ? -1 : publisherLogo.id);
+          handleDisplayContextMenuById(
+            isPopoverMenuOpen ? -1 : publisherLogo.id
+          );
         }}
         onFocus={() => {
           onMenuItemToggle(isPopoverMenuOpen ? null : publisherLogo.id);
@@ -87,6 +101,7 @@ function PopoverLogoContextMenu({
         data-testid={`publisher-logo-context-menu-${idx}`}
         items={items}
       />
+      <strong style={{ backgroundColor: 'white' }}>{publisherLogo.id}</strong>
     </MenuContainer>
   );
 }

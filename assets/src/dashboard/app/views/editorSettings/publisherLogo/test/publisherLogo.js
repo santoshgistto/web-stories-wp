@@ -38,7 +38,7 @@ describe('PublisherLogo', () => {
         handleUpdateDefaultLogo={jest.fn}
         isLoading={false}
         publisherLogos={[]}
-        canUploadFiles={true}
+        canUploadFiles
       />
     );
 
@@ -115,17 +115,17 @@ describe('PublisherLogo', () => {
         isLoading={false}
         publisherLogos={formattedPublisherLogos}
         uploadError={'Something went wrong.'}
-        canUploadFiles={true}
+        canUploadFiles
       />
     );
 
     expect(getByText('Something went wrong.')).toBeInTheDocument();
   });
 
-  it('should trigger mockHandleRemoveLogo when delete button is pressed with enter on an uploaded file', () => {
+  it.only('should trigger mockHandleRemoveLogo when delete button is pressed with enter on an uploaded file', () => {
     const mockHandleRemoveLogo = jest.fn();
 
-    const { getByTestId } = renderWithProviders(
+    const { debug, getByTestId } = renderWithProviders(
       <PublisherLogoSettings
         handleAddLogos={jest.fn}
         handleRemoveLogo={mockHandleRemoveLogo}
@@ -143,7 +143,10 @@ describe('PublisherLogo', () => {
     const ContextMenu = getByTestId('publisher-logo-context-menu-2');
     expect(ContextMenu).toBeInTheDocument();
 
+    debug(ContextMenu);
+
     const MenuItems = within(ContextMenu).queryAllByRole('listitem');
+    console.log({ MenuItems });
     const DeleteFileButton = MenuItems[1];
     expect(DeleteFileButton).toBeDefined();
 

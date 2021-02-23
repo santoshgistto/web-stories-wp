@@ -181,12 +181,12 @@ function PublisherLogoSettings({
               const items = [
                 {
                   label: __('Set as Default', 'web-stories'),
-                  onClick: () => handleRemoveLogoClick(publisherLogo, idx),
+                  onClick: () => handleUpdateDefaultLogo(publisherLogo),
                   disabled: publisherLogo.isDefault,
                 },
                 {
                   label: __('Delete', 'web-stories'),
-                  onClick: () => handleUpdateDefaultLogo(publisherLogo),
+                  onClick: () => handleRemoveLogoClick(publisherLogo, idx),
                 },
               ];
 

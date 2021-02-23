@@ -26,6 +26,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { BUTTON_TRANSITION_TIMING } from '../button/constants';
 import { useKeyDownEffect } from '../keyboard';
 import { KEYS } from '../../utils/constants';
+import { noop, useFocusOut } from '../../utils';
 import { MenuItem, MenuItemProps } from './menuItem';
 
 const FOCUSABLE_ELEMENTS = ['A', 'BUTTON'];
