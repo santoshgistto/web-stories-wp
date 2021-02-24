@@ -83,6 +83,7 @@ export default function StoryMenu({
   const containerRef = useRef(null);
 
   const handleFocusOut = useCallback(() => {
+    console.log('focusing out - stories', { storyId: story.id });
     if (contextMenuId === story.id) {
       onMoreButtonSelected(-1);
     }

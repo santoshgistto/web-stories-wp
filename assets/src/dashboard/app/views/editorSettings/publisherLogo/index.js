@@ -96,6 +96,7 @@ function PublisherLogoSettings({
 
   const handleRemoveLogoClick = useCallback(
     (publisherLogo, idx) => {
+      console.log('click remove!');
       handleRemoveLogo(publisherLogo);
       setIndexRemoved(idx);
       publisherLogoCount.current = publisherLogosById.length;
