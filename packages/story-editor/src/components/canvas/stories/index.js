@@ -17,19 +17,244 @@
 /**
  * External dependencies
  */
-import { createElement, Fragment, createContext, useContext } from '@googleforcreators/react';
+import { createElement, Fragment } from '@googleforcreators/react';
 import styled from 'styled-components';
 import { StoryAnimationState } from '@googleforcreators/animation';
 import PropTypes from 'prop-types';
-import { ELEMENT_TYPES } from '@googleforcreators/elements';
+import { elementTypes } from '@googleforcreators/element-library';
+import { registerElementType } from '@googleforcreators/elements';
 
 /**
  * Internal dependencies
  */
-import fashionInspirationTemplate from '../../../templates/fashionInspiration';
+import PagePreview from '../../footer/pagepreview';
 
 // Use createElement and Fragment from @googleforcreators/react
 const React = { createElement, Fragment };
+
+// Register all element types
+elementTypes.forEach(registerElementType);
+
+// Mock data for the story page
+const MOCK_PAGE = {
+  elements: [
+    {
+      opacity: 100,
+      flip: { vertical: false, horizontal: false },
+      rotationAngle: 0,
+      lockAspectRatio: true,
+      backgroundColor: { color: { r: 196, g: 196, b: 196 } },
+      x: 1,
+      y: 1,
+      width: 1,
+      height: 1,
+      mask: { type: 'rectangle' },
+      isBackground: true,
+      id: '35fb893b-2834-47f0-aa77-c566bb5b580d',
+      isDefaultBackground: true,
+      type: 'shape',
+    },
+    {
+      opacity: 100,
+      flip: { vertical: false, horizontal: false },
+      rotationAngle: 0,
+      lockAspectRatio: true,
+      backgroundTextMode: 'NONE',
+      font: {
+        family: 'Chivo',
+        fallbacks: ['sans-serif'],
+        weights: [300, 400, 700, 900],
+        styles: ['italic', 'regular'],
+        variants: [
+          [0, 300],
+          [1, 300],
+          [0, 400],
+          [1, 400],
+          [0, 700],
+          [1, 700],
+          [0, 900],
+          [1, 900],
+        ],
+        service: 'fonts.google.com',
+        metrics: {
+          upm: 1000,
+          asc: 940,
+          des: -250,
+          tAsc: 940,
+          tDes: -250,
+          tLGap: 0,
+          wAsc: 937,
+          wDes: 250,
+          xH: 511,
+          capH: 686,
+          yMin: -250,
+          yMax: 926,
+          hAsc: 940,
+          hDes: -250,
+          lGap: 0,
+        },
+      },
+      fontSize: 28,
+      backgroundColor: { color: { r: 196, g: 196, b: 196 } },
+      lineHeight: 1.3,
+      textAlign: 'center',
+      padding: { horizontal: 0, vertical: 0 },
+      x: 118.5,
+      y: 554,
+      width: 175,
+      height: 36,
+      id: 'fed8bce3-2eda-4780-9f18-42dde7824944',
+      content: '<span style="font-weight: 900; color: #28292b">Anonymous</span>',
+      type: 'text',
+    },
+    {
+      opacity: 100,
+      flip: { vertical: false, horizontal: false },
+      rotationAngle: 0,
+      lockAspectRatio: true,
+      x: 40,
+      y: 3,
+      width: 66,
+      height: 57,
+      sticker: { type: 'beautyHeart' },
+      id: '4a61ba51-005e-4f4c-9d39-b9ebc6a37ba7',
+      groupId: 'dc20376a-95ab-4347-9ea4-5b6864a83a7a',
+      type: 'sticker',
+    },
+    {
+      opacity: 100,
+      flip: { vertical: false, horizontal: false },
+      rotationAngle: 0,
+      lockAspectRatio: true,
+      width: 66,
+      height: 57,
+      sticker: { type: 'beautyHeart' },
+      id: '6ee64c70-585d-4095-954f-cccb7c630b5a',
+      x: 316,
+      y: 45,
+      groupId: 'dc20376a-95ab-4347-9ea4-5b6864a83a7a',
+      type: 'sticker',
+    },
+    {
+      opacity: 100,
+      flip: { vertical: false, horizontal: false },
+      rotationAngle: 0,
+      lockAspectRatio: true,
+      width: 66,
+      height: 57,
+      sticker: { type: 'beautyHeart' },
+      id: 'ce788cb6-77b2-4a12-9165-62ffbd871924',
+      x: 30,
+      y: 235,
+      groupId: 'dc20376a-95ab-4347-9ea4-5b6864a83a7a',
+      type: 'sticker',
+    },
+    {
+      opacity: 100,
+      flip: { vertical: false, horizontal: false },
+      rotationAngle: 0,
+      lockAspectRatio: true,
+      width: 66,
+      height: 57,
+      sticker: { type: 'beautyHeart' },
+      id: '926a72b2-8304-4171-b62f-c0aa05a161c7',
+      x: 337,
+      y: 540,
+      groupId: 'dc20376a-95ab-4347-9ea4-5b6864a83a7a',
+      type: 'sticker',
+    },
+    {
+      opacity: 100,
+      flip: { vertical: false, horizontal: false },
+      rotationAngle: 0,
+      lockAspectRatio: true,
+      width: 66,
+      height: 57,
+      sticker: { type: 'beautyHeart' },
+      id: 'fa2fcc14-073b-4bcc-aea7-2d8d48dc4415',
+      x: 6,
+      y: 590,
+      groupId: 'dc20376a-95ab-4347-9ea4-5b6864a83a7a',
+      type: 'sticker',
+    },
+    {
+      opacity: 100,
+      flip: { vertical: false, horizontal: false },
+      rotationAngle: 0,
+      lockAspectRatio: true,
+      backgroundTextMode: 'NONE',
+      font: {
+        family: 'Bungee',
+        fallbacks: ['cursive'],
+        weights: [400],
+        styles: ['regular'],
+        variants: [[0, 400]],
+        service: 'fonts.google.com',
+        metrics: {
+          upm: 1000,
+          asc: 860,
+          des: -140,
+          tAsc: 860,
+          tDes: -140,
+          tLGap: 200,
+          wAsc: 1634,
+          wDes: 914,
+          xH: 500,
+          capH: 720,
+          yMin: -916,
+          yMax: 1636,
+          hAsc: 860,
+          hDes: -140,
+          lGap: 200,
+        },
+      },
+      fontSize: 88,
+      backgroundColor: { color: { r: 196, g: 196, b: 196 } },
+      lineHeight: 1.02,
+      textAlign: 'center',
+      padding: { horizontal: 0, vertical: 0 },
+      x: 61,
+      y: 26,
+      width: 309,
+      height: 539,
+      id: '8769c19e-327b-4025-b162-369dc5de3c28',
+      content:
+        '<span style="color: #28292b; letter-spacing: 0.09em; text-transform: uppercase">I</span>\n<span style="color: #28292b; letter-spacing: 0.09em; text-transform: uppercase">woke</span>\n<span style="color: #28292b; letter-spacing: 0.09em; text-transform: uppercase">up</span>\n<span style="color: #28292b; letter-spacing: 0.09em; text-transform: uppercase">like</span>\n<span style="color: #28292b; letter-spacing: 0.09em; text-transform: uppercase">this</span>\n<span style="color: #28292b; letter-spacing: 0.09em; text-transform: uppercase">"</span>',
+      tagName: 'p',
+      type: 'text',
+    },
+  ],
+  backgroundColor: { color: { r: 233, g: 213, b: 197 } },
+  animations: [
+    {
+      id: '33e49f93-0214-491d-b9d9-1df31ab7fa25',
+      type: 'effect-fly-in',
+      targets: ['fed8bce3-2eda-4780-9f18-42dde7824944'],
+      flyInDir: 'bottomToTop',
+      duration: 900,
+      delay: 1000,
+    },
+    {
+      id: '248a15d7-fd3d-419b-8844-0b47f49d1f51',
+      type: 'effect-pulse',
+      targets: ['8769c19e-327b-4025-b162-369dc5de3c28'],
+      scale: 0.15,
+      iterations: 1,
+      duration: 1500,
+      delay: 0,
+    },
+  ],
+  type: 'page',
+  id: '449ed18d-4387-466b-8ef4-cdb5463113d3',
+  pageTemplateType: 'quote',
+  groups: {
+    'dc20376a-95ab-4347-9ea4-5b6864a83a7a': {
+      name: 'Background',
+      isLocked: true,
+      isCollapsed: true,
+    },
+  },
+};
 
 export default {
   title: 'Stories Editor/Canvas/DisplayLayer',
@@ -41,7 +266,7 @@ export default {
   argTypes: {
     backgroundColor: {
       control: 'color',
-      defaultValue: '#f2f2f2',
+      defaultValue: '#e9d5c5',
       description: 'Background color of the story page',
     },
     showAnimations: {
@@ -53,11 +278,14 @@ export default {
       control: 'select',
       options: [
         '',
-        'ac0ad0ca-5d24-40c4-90bd-e20385e6584e',
-        '3cccfd70-c5ed-4e0a-84f8-8356b205e519',
-        'be6b55fc-a396-4cfb-8e1b-4e5eb8c963cd',
-        'e6faaf99-9591-482a-90f6-c89ee6f7850b',
-        'fdd58d7f-a517-4b39-b1d2-293d57ada467',
+        '35fb893b-2834-47f0-aa77-c566bb5b580d',
+        'fed8bce3-2eda-4780-9f18-42dde7824944',
+        '4a61ba51-005e-4f4c-9d39-b9ebc6a37ba7',
+        '6ee64c70-585d-4095-954f-cccb7c630b5a',
+        'ce788cb6-77b2-4a12-9165-62ffbd871924',
+        '926a72b2-8304-4171-b62f-c0aa05a161c7',
+        'fa2fcc14-073b-4bcc-aea7-2d8d48dc4415',
+        '8769c19e-327b-4025-b162-369dc5de3c28',
       ],
       defaultValue: '',
       description: 'Select an element to highlight',
@@ -81,118 +309,37 @@ const Container = styled.div`
   padding: 20px;
 `;
 
-const StoryContainer = styled.div`
-  width: ${STORY_WIDTH}px;
-  height: ${STORY_HEIGHT}px;
-  position: relative;
-  background-color: ${({ backgroundColor }) => backgroundColor || '#f2f2f2'};
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-`;
-
-// Helper function to convert hex color to RGB
-const hexToRgb = (hex = '#f2f2f2') => {
-  // Remove # if present
-  hex = hex.replace('#', '');
-  
-  // Parse the hex values
-  const r = parseInt(hex.substring(0, 2), 16);
-  const g = parseInt(hex.substring(2, 4), 16);
-  const b = parseInt(hex.substring(4, 6), 16);
-  
-  return { r, g, b };
-};
-
 /**
- * A story that uses a simplified version of the DisplayLayer component.
+ * A story that uses the PagePreview component to render the elements.
  */
 const StoryDisplayLayerPreview = ({ 
-  backgroundColor = '#f2f2f2', 
+  backgroundColor = '#e9d5c5', 
   showAnimations = false, 
   selectedElementId = '' 
 }) => {
-  // Convert hex color to RGB for the page background
-  const rgbColor = hexToRgb(backgroundColor);
-
   // Create a modified page with the provided background color
   const currentPage = {
-    ...fashionInspirationTemplate.pages[0],
-    backgroundColor: { color: rgbColor },
+    ...MOCK_PAGE,
+    backgroundColor: { 
+      color: { 
+        r: parseInt(backgroundColor.slice(1, 3), 16),
+        g: parseInt(backgroundColor.slice(3, 5), 16),
+        b: parseInt(backgroundColor.slice(5, 7), 16)
+      } 
+    },
   };
-
-  // Scale factor to fit the elements in the story container
-  const scaleX = STORY_WIDTH / 412; // Assuming the template was designed for a 412px width
-  const scaleY = STORY_HEIGHT / 618; // Assuming the template was designed for a 618px height
 
   return (
     <Container>
-      <StoryContainer backgroundColor={backgroundColor}>
-        {/* Render the elements from the template */}
-        {currentPage.elements.map((element) => {
-          if (element.isHidden) {
-            return null;
-          }
-
-          return (
-            <div
-              key={element.id}
-              style={{
-                position: 'absolute',
-                left: `${element.x * scaleX}px`,
-                top: `${element.y * scaleY}px`,
-                width: `${element.width * scaleX}px`,
-                height: `${element.height * scaleY}px`,
-                transform: `rotate(${element.rotationAngle}deg)`,
-                backgroundColor: element.backgroundColor?.color ? 
-                  `rgb(${element.backgroundColor.color.r}, ${element.backgroundColor.color.g}, ${element.backgroundColor.color.b})` : 
-                  'transparent',
-                opacity: element.opacity / 100,
-                border: selectedElementId === element.id ? '2px solid blue' : 'none',
-                zIndex: element.isBackground ? 0 : 1,
-                overflow: 'hidden',
-              }}
-            >
-              {element.type === 'text' && (
-                <div 
-                  dangerouslySetInnerHTML={{ __html: element.content }}
-                  style={{
-                    fontSize: `${element.fontSize * scaleX}px`,
-                    lineHeight: element.lineHeight,
-                    textAlign: element.textAlign,
-                    fontFamily: element.font?.family || 'sans-serif',
-                    width: '100%',
-                    height: '100%',
-                  }}
-                />
-              )}
-              {element.type === 'image' && element.resource && (
-                <div
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    backgroundImage: `url(${element.resource.src})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                  }}
-                />
-              )}
-              {element.type === 'shape' && (
-                <div
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    backgroundColor: element.backgroundColor?.color ? 
-                      `rgb(${element.backgroundColor.color.r}, ${element.backgroundColor.color.g}, ${element.backgroundColor.color.b})` : 
-                      'transparent',
-                    borderRadius: element.mask?.type === 'circle' ? '50%' : '0',
-                  }}
-                />
-              )}
-            </div>
-          );
-        })}
-      </StoryContainer>
+      <PagePreview
+        page={currentPage}
+        width={STORY_WIDTH}
+        as="div"
+        isActive={false}
+        isInteractive={false}
+        tabIndex={-1}
+        label="Story Preview"
+      />
     </Container>
   );
 };
