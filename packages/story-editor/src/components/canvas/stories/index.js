@@ -17,9 +17,13 @@
 /**
  * External dependencies
  */
-import { createElement, Fragment } from '@googleforcreators/react';
+import { createElement, Fragment, useState, useCallback } from '@googleforcreators/react';
 import styled from 'styled-components';
-import { StoryAnimationState } from '@googleforcreators/animation';
+import { 
+  StoryAnimationState, 
+  AnimationProvider, 
+  useStoryAnimationContext 
+} from '@googleforcreators/animation';
 import PropTypes from 'prop-types';
 import { elementTypes } from '@googleforcreators/element-library';
 import { registerElementType } from '@googleforcreators/elements';
@@ -256,6 +260,11 @@ const MOCK_PAGE = {
   },
 };
 
+/**
+ * Internal dependencies
+ */
+import StoryPlayer from './storyPlayer';
+
 export default {
   title: 'Stories Editor/Canvas/DisplayLayer',
   parameters: {
@@ -303,11 +312,108 @@ const Container = styled.div`
   height: 100%;
   min-height: 700px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #f1f1f1;
   padding: 20px;
 `;
+
+// Styled components for animation controls
+const ControlsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+`;
+
+const ButtonsContainer = styled.div`
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+`;
+
+const ControlButton = styled.button`
+  padding: 8px 16px;
+  background-color: ${({ primary }) => primary ? '#0c66e4' : '#5a5a5a'};
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: ${({ primary }) => primary ? '#0a54ba' : '#444444'};
+  }
+`;
+
+const ControlsTitle = styled.div`
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+`;
+
+/**
+ * Animation controls component
+ */
+const AnimationControls = () => {
+  const {
+    actions: { WAAPIAnimationMethods },
+  } = useStoryAnimationContext();
+
+  return (
+    <ControlsContainer>
+      <ControlsTitle>Animation Controls</ControlsTitle>
+      <ButtonsContainer>
+        <ControlButton 
+          onClick={WAAPIAnimationMethods.play}
+          primary
+        >
+          Play
+        </ControlButton>
+        <ControlButton 
+          onClick={WAAPIAnimationMethods.pause}
+        >
+          Pause
+        </ControlButton>
+        <ControlButton 
+          onClick={WAAPIAnimationMethods.reset}
+        >
+          Reset
+        </ControlButton>
+      </ButtonsContainer>
+    </ControlsContainer>
+  );
+};
+
+/**
+ * Animation wrapper component
+ */
+const StoryAnimations = ({ children, animations, elements }) => {
+  const resetAnimationState = useCallback(() => {
+    // This would normally update the animation state in the story context
+    console.log('Animation finished');
+  }, []);
+
+  return (
+    <AnimationProvider
+      animations={animations}
+      elements={elements}
+      onWAAPIFinish={resetAnimationState}
+    >
+      {children}
+      <AnimationControls />
+    </AnimationProvider>
+  );
+};
+
+StoryAnimations.propTypes = {
+  children: PropTypes.node,
+  animations: PropTypes.array,
+  elements: PropTypes.array,
+};
 
 /**
  * A story that uses the PagePreview component to render the elements.
@@ -331,15 +437,20 @@ const StoryDisplayLayerPreview = ({
 
   return (
     <Container>
-      <PagePreview
-        page={currentPage}
-        width={STORY_WIDTH}
-        as="div"
-        isActive={false}
-        isInteractive={false}
-        tabIndex={-1}
-        label="Story Preview"
-      />
+      <StoryAnimations 
+        animations={currentPage.animations} 
+        elements={currentPage.elements}
+      >
+        <PagePreview
+          page={currentPage}
+          width={STORY_WIDTH}
+          as="div"
+          isActive={false}
+          isInteractive={false}
+          tabIndex={-1}
+          label="Story Preview"
+        />
+      </StoryAnimations>
     </Container>
   );
 };
@@ -350,7 +461,7 @@ StoryDisplayLayerPreview.propTypes = {
   selectedElementId: PropTypes.string,
 };
 
-// Story component
+// Story components
 export const _default = StoryDisplayLayerPreview;
 
 // Add a description to the story
@@ -361,4 +472,17 @@ _default.parameters = {
       story: 'This story demonstrates the DisplayLayer component with a sample story template. Use the controls to customize the appearance and behavior.',
     },
   },
+};
+
+// Story Player component that shows a full story with navigation
+export const FullStoryPlayer = () => <StoryPlayer />;
+
+FullStoryPlayer.storyName = 'Full Story Player';
+FullStoryPlayer.parameters = {
+  docs: {
+    description: {
+      story: 'This story demonstrates a full story player with navigation controls and animations. You can navigate between pages and play animations.',
+    },
+  },
+  controls: { hideNoControlsWarning: true },
 };
