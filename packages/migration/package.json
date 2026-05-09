@@ -21,7 +21,7 @@
     "url": "https://github.com/googleforcreators/web-stories-wp/issues"
   },
   "engines": {
-    "node": ">= 12 || >= 14 || >= 16 || >= 18 || >= 20",
+    "node": ">= 20 || >= 22 || >= 24",
     "npm": ">= 7.3"
   },
   "type": "module",
@@ -44,8 +44,8 @@
   },
   "devDependencies": {
     "@rollup/plugin-babel": "^6.0.4",
-    "@rollup/plugin-node-resolve": "^16.0.1",
-    "rollup": "^2.79.2"
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "rollup": "^2.80.0"
   },
   "scripts": {
     "migration": "node ./scripts/cli.js"

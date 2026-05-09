@@ -23,7 +23,7 @@
     "url": "https://github.com/googleforcreators/web-stories-wp/issues"
   },
   "engines": {
-    "node": ">= 12 || >= 14 || >= 16 || >= 18 || >= 20",
+    "node": ">= 20 || >= 22 || >= 24",
     "npm": ">= 7.3"
   },
   "customExports": {
@@ -41,7 +41,7 @@
   "sideEffects": false,
   "dependencies": {
     "@googleforcreators/react": "*",
-    "@tannin/sprintf": "^1.2.0",
+    "@tannin/sprintf": "^1.3.3",
     "prop-types": "^15.8.1",
     "tannin": "^1.2.0"
   }

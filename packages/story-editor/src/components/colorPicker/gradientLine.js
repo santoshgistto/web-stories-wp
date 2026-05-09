@@ -109,7 +109,6 @@ function GradientLine({
       <Background stops={stops} />
       {stops.map(({ position, color }, index) => (
         <GradientStop
-          // eslint-disable-next-line react-compiler/react-compiler -- FIXME
           ref={(ref) => (stopsRef[index].current = ref)}
           key={
             // eslint-disable-next-line react/no-array-index-key -- Should be OK here.
@@ -126,14 +125,11 @@ function GradientLine({
       ))}
       {tempPointerPosition && (
         <TempPointer
-          aria-label={
-            /* eslint-disable-next-line @wordpress/valid-sprintf -- False positive. */
-            sprintf(
-              /* translators: %d: stop percentage */
-              __('Temporary gradient stop at %d%%', 'web-stories'),
-              Math.round(100 * (tempPointerPosition / LINE_LENGTH))
-            )
-          }
+          aria-label={sprintf(
+            /* translators: %d: stop percentage */
+            __('Temporary gradient stop at %d%%', 'web-stories'),
+            Math.round(100 * (tempPointerPosition / LINE_LENGTH))
+          )}
           x={tempPointerPosition}
         />
       )}

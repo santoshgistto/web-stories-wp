@@ -35,6 +35,7 @@ function useForwardedRef<T>(ref: React.ForwardedRef<T>) {
         if (typeof ref === 'function') {
           ref(referenceRef.current);
         } else {
+          // eslint-disable-next-line react-hooks/immutability -- FIXME
           ref.current = referenceRef.current;
         }
       }

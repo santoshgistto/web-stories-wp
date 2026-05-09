@@ -95,7 +95,7 @@ const StoriesInspectorControls = (props) => {
     showFilters = true,
   } = props;
 
-  const firstUpdate = useRef(true);
+  const firstUpdateRef = useRef(true);
 
   const taxonomies = useSelect((select) => {
     const { getTaxonomies } = select(coreStore);
@@ -134,8 +134,8 @@ const StoriesInspectorControls = (props) => {
 
   useEffect(() => {
     // We want to update the fieldState for any viewType change post first render.
-    if (firstUpdate.current) {
-      firstUpdate.current = false;
+    if (firstUpdateRef.current) {
+      firstUpdateRef.current = false;
       return;
     }
 
@@ -210,6 +210,7 @@ const StoriesInspectorControls = (props) => {
             }
             className="web-stories-settings-archive-link"
             __nextHasNoMarginBottom
+            __next40pxDefaultSize
           />
         )}
       </PanelBody>

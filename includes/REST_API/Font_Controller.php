@@ -604,6 +604,12 @@ class Font_Controller extends WP_REST_Posts_Controller {
 			remove_filter( 'post_password_required', [ $this, 'check_password_required' ] );
 		}
 
+		/**
+		 * List of custom fonts.
+		 *
+		 * @phpstan-var Font[] $posts
+		 */
+
 		return $posts;
 	}
 

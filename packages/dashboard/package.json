@@ -21,7 +21,7 @@
     "url": "https://github.com/googleforcreators/web-stories-wp/issues"
   },
   "engines": {
-    "node": ">= 12 || >= 14 || >= 16 || >= 18 || >= 20",
+    "node": ">= 20 || >= 22 || >= 24",
     "npm": ">= 7.3"
   },
   "customExports": {
@@ -57,7 +57,6 @@
   },
   "devDependencies": {
     "@googleforcreators/karma-fixture": "*",
-    "@storybook/addon-essentials": "^8.4.7",
     "@testing-library/react": "^12.1.5",
     "@testing-library/react-hooks": "^8.0.1",
     "@testing-library/user-event": "^14.6.1",

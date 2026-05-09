@@ -21,7 +21,7 @@
     "url": "https://github.com/googleforcreators/web-stories-wp/issues"
   },
   "engines": {
-    "node": ">= 12 || >= 14 || >= 16 || >= 18 || >= 20",
+    "node": ">= 20 || >= 22 || >= 24",
     "npm": ">= 7.3"
   },
   "customExports": {
@@ -43,7 +43,7 @@
     "@googleforcreators/react": "*",
     "@googleforcreators/tracking": "*",
     "@types/react-modal": "^3.16.3",
-    "big.js": "^6.2.2",
+    "big.js": "^7.0.1",
     "mousetrap": "^1.6.5",
     "polished": "^4.3.1",
     "prop-types": "^15.8.1",
@@ -53,12 +53,11 @@
     "uuid": "^11.1.0"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^8.4.7",
     "@testing-library/react": "^12.1.5",
     "@testing-library/react-hooks": "^8.0.1",
     "@types/big.js": "^6.2.2",
     "@types/react-transition-group": "^4.4.6",
     "@types/styled-components": "^5.1.26",
-    "use-debounce": "^10.0.4"
+    "use-debounce": "^10.0.6"
   }
 }

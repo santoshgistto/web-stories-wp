@@ -22,6 +22,9 @@ parameters:
     -
       identifier: require.fileNotFound
     -
+      identifier: staticMethod.internalClass
+      path: tests/phpunit/unit/tests
+    -
       message: '/^Parameter #2 \$args of method WP_Customize_Manager::add_setting\(\)/'
       path: includes/Admin/Customizer.php
     -
@@ -30,6 +33,9 @@ parameters:
     -
       message: '/^Call to deprecated method _get_first_available_transport\(\)/'
       path: includes/REST_API/Hotlinking_Controller.php
+    -
+      message: '/apply_filters expects non-empty-string, string given/'
+      identifier: argument.type
   paths:
     - includes/
     - tests/phpunit/integration/includes

@@ -52,6 +52,8 @@ function SavedTemplates({
   isLoading,
   ...rest
 }) {
+  'use no memo';
+
   const {
     actions: { deletePageTemplate },
   } = useAPI();
@@ -108,6 +110,7 @@ function SavedTemplates({
   return (
     // tabIndex is required for FireFox bug when using keyboard to navigate from Saved / Default Templates dropdown to Template
     <Wrapper ref={ref} tabIndex={-1}>
+      {/* eslint-disable-next-line react-hooks/refs -- FIXME */}
       {!isLoading && ref.current ? (
         <TemplateList
           parentRef={ref}

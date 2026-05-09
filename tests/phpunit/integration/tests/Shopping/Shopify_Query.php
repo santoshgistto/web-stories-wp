@@ -336,7 +336,6 @@ class Shopify_Query extends DependencyInjectedTestCase {
 
 		$this->assertNotWPError( $actual );
 		$this->assertEmpty( $actual['products'] );
-		$this->assertCount( 0, $actual['products'] );
 		$this->assertSame( 1, $this->request_count );
 		$this->assertStringContainsString( 'query: "title:*some search term*"', $this->request_body );
 	}
@@ -346,7 +345,7 @@ class Shopify_Query extends DependencyInjectedTestCase {
 	 *
 	 * @dataProvider data_test_get_search_sort_by_query
 	 */
-	public function data_test_get_search_sort_by_query(): array {
+	public static function data_test_get_search_sort_by_query(): array {
 		return [
 			'Default search'  => [
 				[ 'some search term', 1, 100, 'date', '' ],
@@ -372,8 +371,8 @@ class Shopify_Query extends DependencyInjectedTestCase {
 	}
 
 	/**
-	 * @param string[] $args
-	 * @param string[] $expected
+	 * @param array{0: string, 1: int, 2: int, 3: string, 4: string} $args
+	 * @param string[]               $expected
 	 *
 	 * @covers ::fetch_remote_products
 	 * @covers ::get_search
@@ -397,7 +396,7 @@ class Shopify_Query extends DependencyInjectedTestCase {
 	 *
 	 * @dataProvider data_test_get_search_extensions_code_response
 	 */
-	public function data_test_get_search_extensions_code_response(): array {
+	public static function data_test_get_search_extensions_code_response(): array {
 		return [
 			'THROTTLED'             => [
 				'throttled',

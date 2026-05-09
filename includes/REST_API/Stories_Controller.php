@@ -542,7 +542,7 @@ class Stories_Controller extends Stories_Base_Controller {
 			$statuses_count[ $key ] = absint( $posts_query->found_posts );
 			$statuses_count['all'] += $statuses_count[ $key ];
 			if ( \in_array( $status, $this->args['post_status'] ?? [], true ) ) {
-				$total_posts += $statuses_count[ $key ];
+				$total_posts += $statuses_count[ $key ] ?? 0;
 			}
 		}
 

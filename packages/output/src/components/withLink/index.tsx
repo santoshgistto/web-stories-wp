@@ -55,8 +55,8 @@ function WithLink({ element, children, ...rest }: WithLinkProps) {
   const clonedRel = rel.concat(['noreferrer']);
   const urlWithProtocol = withProtocol(url);
 
-  /* eslint-disable react/jsx-no-target-blank -- False positive */
   return (
+    // eslint-disable-next-line react/jsx-no-target-blank -- Working as intended.
     <a
       href={urlWithProtocol}
       data-tooltip-icon={icon || undefined}
@@ -68,7 +68,6 @@ function WithLink({ element, children, ...rest }: WithLinkProps) {
       {children}
     </a>
   );
-  /* eslint-enable react/jsx-no-target-blank -- False positive */
 }
 
 export default WithLink;

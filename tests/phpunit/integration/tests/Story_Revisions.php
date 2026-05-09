@@ -59,8 +59,8 @@ class Story_Revisions extends DependencyInjectedTestCase {
 	/**
 	 * Testing the revisions_to_keep() method.
 	 *
-	 * @param int|bool $num      Number of revisions
-	 * @param int $expected Expected string of CSS rules.
+	 * @param int|bool|string $num      Number of revisions
+	 * @param int             $expected Expected string of CSS rules.
 	 *
 	 * @dataProvider data_test_revisions_to_keep
 	 * @covers ::revisions_to_keep
@@ -72,7 +72,7 @@ class Story_Revisions extends DependencyInjectedTestCase {
 	/**
 	 * @return array<array{num: mixed, expected: int}>
 	 */
-	public function data_test_revisions_to_keep(): array {
+	public static function data_test_revisions_to_keep(): array {
 		return [
 			[
 				'num'      => 0,

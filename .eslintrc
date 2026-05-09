@@ -7,10 +7,12 @@
     "plugin:import/recommended",
     "plugin:@eslint-community/eslint-comments/recommended",
     "plugin:react/recommended",
+    "plugin:react-hooks/recommended-latest",
     "plugin:prettier/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:jsdoc/recommended",
-    "plugin:styled-components-a11y/recommended"
+    "plugin:styled-components-a11y/recommended",
+    "plugin:oxlint/recommended"
   ],
   "plugins": [
     "@babel",
@@ -20,7 +22,6 @@
     "jsx-a11y",
     "markdown",
     "react",
-    "react-compiler",
     "react-hooks",
     "styled-components-a11y"
   ],
@@ -215,15 +216,21 @@
     "react/no-unused-prop-types": "error",
     "react/react-in-jsx-scope": "off",
     "react/self-closing-comp": "error",
-    "react-compiler/react-compiler": [
-      "error",
-      {
-        "environment": {
-          "enableTreatRefLikeIdentifiersAsRefs": true,
-          "validateRefAccessDuringRender": false
-        }
-      }
-    ],
+    "react-hooks/config": "error",
+    "react-hooks/error-boundaries": "error",
+    "react-hooks/component-hook-factories": "error",
+    "react-hooks/gating": "error",
+    "react-hooks/globals": "error",
+    "react-hooks/immutability": "error",
+    "react-hooks/preserve-manual-memoization": "error",
+    "react-hooks/purity": "error",
+    "react-hooks/refs": "error",
+    "react-hooks/set-state-in-effect": "error",
+    "react-hooks/set-state-in-render": "error",
+    "react-hooks/static-components": "error",
+    "react-hooks/unsupported-syntax": "warn",
+    "react-hooks/use-memo": "error",
+    "react-hooks/incompatible-library": "warn",
     "import/no-extraneous-dependencies": "error",
     "import/no-unresolved": "error",
     "import/order": [
@@ -244,6 +251,8 @@
     "jsdoc/check-tag-names": ["error", {
       "definedTags": [ "jest-environment" ]
     }],
+    "jsdoc/reject-any-type": "off",
+    "jsdoc/reject-function-type": "off",
     "jsdoc/require-jsdoc": ["off", {
       "publicOnly": true
     }],
@@ -386,7 +395,10 @@
               }
             ]
           }
-        ]
+        ],
+        "import/no-unresolved": "off",
+        "import/default": "off",
+        "import/named": "off"
       }
     },
     {
@@ -432,7 +444,8 @@
       "rules": {
         "@eslint-community/eslint-comments/require-description": "off",
         "react/prop-types": "off",
-        "react-compiler/react-compiler": "off",
+        "react-hooks/globals": "off",
+        "react-hooks/immutability": "off",
         "jest/no-hooks": "off",
         "jest/no-untyped-mock-factory": "off",
         "jest/max-expects": "off",
@@ -456,6 +469,7 @@
         "jest/padding-around-describe-blocks": "off",
         "jest/padding-around-expect-groups": "off",
         "jest/padding-around-test-blocks": "off",
+        "jest/prefer-ending-with-an-expect": "off",
         "jsdoc/require-jsdoc": "off",
         "testing-library/no-await-sync-events": "error",
         "testing-library/no-debugging-utils": "error",
@@ -569,6 +583,7 @@
         "@eslint-community/eslint-comments/require-description": "off",
         "jest/max-expects": "off",
         "jest/no-hooks": "off",
+        "jest/prefer-ending-with-an-expect": "off",
         "jest/prefer-expect-assertions": "off",
         "jest/prefer-importing-jest-globals": "off",
         "jest/prefer-inline-snapshots": "off",
@@ -675,7 +690,7 @@
         "packages/text-sets/scripts/**/*.js"
       ],
       "extends": [
-        "plugin:node/recommended",
+        "plugin:n/recommended",
         "plugin:security/recommended-legacy"
       ],
       "plugins": [
@@ -686,10 +701,10 @@
       },
       "rules": {
         "@eslint-community/eslint-comments/require-description": "off",
-        "node/no-extraneous-import": "off",
-        "node/no-missing-import": "off",
-        "node/no-unpublished-import": "off",
-        "node/no-unpublished-require": "off",
+        "n/no-extraneous-import": "off",
+        "n/no-missing-import": "off",
+        "n/no-unpublished-import": "off",
+        "n/no-unpublished-require": "off",
         "security/detect-non-literal-fs-filename": "off"
       }
     },
@@ -699,7 +714,7 @@
       ],
       "rules": {
         "no-console": "off",
-        "node/shebang": "off"
+        "n/hashbang": "off"
       }
     },
     {
@@ -952,10 +967,9 @@
         "packages/story-editor/src/components/videoTrim/useVideoNode.js",
         "packages/transform/src/useTransformHandler.ts",
         "packages/wp-story-editor/src/components/fontCheck/index.js"
-
       ],
       "rules": {
-        "react-compiler/react-compiler": "off"
+        "react-hooks/refs": "off"
       }
     }
   ]

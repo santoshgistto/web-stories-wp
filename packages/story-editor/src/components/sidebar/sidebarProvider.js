@@ -67,6 +67,14 @@ function SidebarProvider({ sidebarTabs, children }) {
     highlight: state[states.StylePane],
   }));
 
+  const sidebarRef = useRef(null);
+
+  const [tab, setTab] = useState(INSERT);
+  const [users, setUsers] = useState([]);
+  const [sidebarContentHeight, setSidebarContentHeight] = useState(null);
+  const sidebarContentRef = useRef();
+  const tabRef = useRef(tab);
+
   // set tab when content is highlighted
   useEffect(() => {
     if (SIDEBAR_TAB_IDS.has(highlightedTab)) {
@@ -76,14 +84,6 @@ function SidebarProvider({ sidebarTabs, children }) {
       });
     }
   }, [highlightedTab]);
-
-  const sidebarRef = useRef(null);
-
-  const [tab, setTab] = useState(INSERT);
-  const [users, setUsers] = useState([]);
-  const [sidebarContentHeight, setSidebarContentHeight] = useState(null);
-  const sidebarContentRef = useRef();
-  const tabRef = useRef(tab);
 
   const insertPaneRef = useRef(null);
   const designPaneRef = useRef(null);

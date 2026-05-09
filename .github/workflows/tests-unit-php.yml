@@ -55,32 +55,36 @@ jobs:
     continue-on-error: ${{ matrix.experimental }}
     strategy:
       matrix:
-        php: ['8.3', '8.2', '8.1', '8.0']
+        php: ['8.4', '8.3', '8.2', '8.1', '8.0']
         wp: ['latest']
         coverage: [false]
         experimental: [false]
         include:
-          - php: '8.4'
+          - php: '8.5'
             wp: 'latest'
             coverage: true
             experimental: false
 
-          - php: '8.4'
+          - php: '8.5'
             wp: 'latest'
             random: true
             experimental: true
 
           - php: '7.4'
-            wp: '6.5'
+            wp: '6.6'
             experimental: false
 
-          - php: '8.4'
+          - php: '8.5'
+            wp: 'trunk'
+            experimental: true
+
+          - php: 'nightly'
             wp: 'trunk'
             experimental: true
 
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@4d991eb9b905ef189e4c376166672c3f2f230481
+        uses: step-security/harden-runner@fe104658747b27e96e4f7e80cd0a94068e53901d
         with:
           disable-file-monitoring: true
           egress-policy: audit
@@ -100,20 +104,20 @@ jobs:
             dl.cloudsmith.io:443
 
       - name: Checkout
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
 
       # PHP-Scoper only works on PHP 7.4+ and we need to prefix our dependencies to accurately test them.
       # So we temporarily switch PHP versions, do a full install and then remove the package.
       # Then switch back to the PHP version we want to test and delete the vendor directory.
 
       - name: Setup PHP 8.0
-        uses: shivammathur/setup-php@e6f75134d35752277f093989e72e140eaa222f35
+        uses: shivammathur/setup-php@accd6127cb78bee3e8082180cb391013d204ef9f
         with:
-          php-version: '8.0'
+          php-version: latest
           tools: composer
 
       - name: Install PHP dependencies
-        uses: ramsey/composer-install@57532f8be5bda426838819c5ee9afb8af389d51a
+        uses: ramsey/composer-install@65e4f84970763564f46a70b8a54b90d033b3bdda
         with:
           composer-options: '--prefer-dist --no-progress --no-interaction'
 
@@ -121,7 +125,7 @@ jobs:
         run: rm -rf vendor/*
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@e6f75134d35752277f093989e72e140eaa222f35
+        uses: shivammathur/setup-php@accd6127cb78bee3e8082180cb391013d204ef9f
         with:
           php-version: ${{ matrix.php }}
           extensions: mysql
@@ -129,14 +133,9 @@ jobs:
           tools: composer, cs2pr
 
       - name: Install PHP dependencies
-        uses: ramsey/composer-install@57532f8be5bda426838819c5ee9afb8af389d51a
+        uses: ramsey/composer-install@65e4f84970763564f46a70b8a54b90d033b3bdda
         with:
           composer-options: '--prefer-dist --no-progress --no-interaction --no-scripts'
-
-      - name: Update PHPUnit
-        run: |
-          echo "Installing latest version of PHPUnit"
-          composer update --ignore-platform-reqs --no-interaction --no-scripts yoast/phpunit-polyfills --with-dependencies
 
       - name: Composer dump autoload
         run: composer dump-autoload --no-interaction
@@ -146,17 +145,21 @@ jobs:
 
       - name: Verify MariaDB connection
         run: |
-          while ! mysqladmin ping -h"127.0.0.1" -P"${{ job.services.mysql.ports[3306] }}" --silent; do
+          while ! mysqladmin ping -h"127.0.0.1" -P"${JOB_SERVICES_MYSQL_3307TH_PORTS}" --silent; do
             sleep 1
           done
+        env:
+          JOB_SERVICES_MYSQL_3307TH_PORTS: ${{ job.services.mysql.ports[3306] }}
 
       - name: Install svn
         run: |
-          sudo apt-get update
-          sudo apt-get install -y subversion
+          sudo apt update -y --allow-releaseinfo-change
+          sudo apt install -y subversion
 
       - name: Set up tests
-        run: bash bin/install-wp-tests.sh wordpress_test root '' 127.0.0.1:${{ job.services.mysql.ports['3306'] }} ${{ matrix.wp }} true
+        run: bash bin/install-wp-tests.sh wordpress_test root '' 127.0.0.1:${JOB_SERVICES_MYSQL_PORTS_3306} ${{ matrix.wp }} true
+        env:
+          JOB_SERVICES_MYSQL_PORTS_3306: ${{ job.services.mysql.ports['3306'] }}
 
       - name: Set up problem matchers for PHPUnit
         run: echo "::add-matcher::${{ runner.tool_cache }}/phpunit.json"
@@ -183,7 +186,7 @@ jobs:
         if: ${{ matrix.random }}
 
       - name: Upload code coverage report
-        uses: codecov/codecov-action@0565863a31f2c772f9f0395002a31e3f06189574
+        uses: codecov/codecov-action@57e3a136b779b570ffcdbf80b3bdc90e7fab3de2
         with:
           files: build/logs/*.xml
           token: ${{ secrets.CODECOV_TOKEN }}

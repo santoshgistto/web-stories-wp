@@ -152,6 +152,7 @@ function SizePositionPanel(props) {
 
   const bgButtonRef = useRef(null);
   usePerformanceTracking({
+    // eslint-disable-next-line react-hooks/refs -- FIXME
     node: bgButtonRef.current,
     eventData: TRACKING_EVENTS.SET_BACKGROUND_MEDIA,
   });
@@ -374,7 +375,7 @@ function SizePositionPanel(props) {
         <Area area="r">
           <NumericInput
             suffix={<Icons.Angle />}
-            unit={_x('°', 'Degrees, 0 - 360.', 'web-stories')}
+            unit={_x('°', 'Degrees, 0 — 360.', 'web-stories')}
             value={rotationAngle}
             min={MIN_MAX.ROTATION.MIN}
             max={MIN_MAX.ROTATION.MAX}
