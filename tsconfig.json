@@ -21,6 +21,7 @@
     { "path": "packages/stories-block" },
     { "path": "packages/stories-carousel" },
     { "path": "packages/story-editor" },
+    { "path": "packages/story-player" },
     { "path": "packages/templates" },
     { "path": "packages/test-utils" },
     { "path": "packages/text-sets" },

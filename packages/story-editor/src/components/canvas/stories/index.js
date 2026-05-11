@@ -264,6 +264,8 @@ const MOCK_PAGE = {
  * Internal dependencies
  */
 import StoryPlayer from './storyPlayer';
+import { StoryPlayer as PackagedStoryPlayer } from '@googleforcreators/story-player';
+import storyData from './story.json';
 
 export default {
   title: 'Stories Editor/Canvas/DisplayLayer',
@@ -482,6 +484,23 @@ FullStoryPlayer.parameters = {
   docs: {
     description: {
       story: 'This story demonstrates a full story player with navigation controls and animations. You can navigate between pages and play animations.',
+    },
+  },
+  controls: { hideNoControlsWarning: true },
+};
+
+// Same player, but consumed from the @googleforcreators/story-player package.
+export const PackagedFullStoryPlayer = () => (
+  <PackagedStoryPlayer pages={storyData.pages} />
+);
+
+PackagedFullStoryPlayer.storyName =
+  'Full Story Player (from @googleforcreators/story-player)';
+PackagedFullStoryPlayer.parameters = {
+  docs: {
+    description: {
+      story:
+        'Same demo as "Full Story Player", but rendered via the standalone @googleforcreators/story-player package (TypeScript, decoupled from the editor footer/PagePreview). Proves the new package is consumable end-to-end.',
     },
   },
   controls: { hideNoControlsWarning: true },

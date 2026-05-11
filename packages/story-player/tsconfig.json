@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.shared.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "declarationDir": "dist-types"
+  },
+  "references": [
+    { "path": "../animation" },
+    { "path": "../elements" },
+    { "path": "../react" },
+    { "path": "../story-editor" },
+    { "path": "../transform" },
+    { "path": "../units" }
+  ],
+  "include": ["src/**/*"]
+}
