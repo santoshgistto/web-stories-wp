@@ -19,7 +19,8 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@googleforcreators/*": ["../../packages/*/src"]
     }
   },
   "include": [
