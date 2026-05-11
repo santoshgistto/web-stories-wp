@@ -19,7 +19,7 @@
  */
 import { ThemeProvider } from 'styled-components';
 // eslint-disable-next-line import/no-unresolved
-import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
+import { INITIAL_VIEWPORTS } from 'storybook/viewport';
 import {
   theme as designSystemTheme,
   lightMode,

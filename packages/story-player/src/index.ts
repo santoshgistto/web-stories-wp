@@ -31,3 +31,14 @@ export type {
   TemplateSubstitutions,
   PlaceholderInfo,
 } from './applyTemplate';
+
+// React-Native-Web renderer. Web consumers can import these directly; native
+// consumers will need to swap `react-native-web` imports for `react-native`
+// when this lands as a cross-platform option.
+export {
+  StoryPlayerRN,
+  PreviewPageRN,
+  DisplayElementRN,
+  ImageRN,
+} from './rn';
+export type { RNPageSize, RNBox, StoryPlayerRNProps } from './rn';

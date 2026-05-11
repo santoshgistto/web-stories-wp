@@ -17,4 +17,16 @@ declare module '@googleforcreators/story-player' {
     elementId: string
     elementType: string
   }>
+
+  // RN-Web renderer (image element only for now).
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  export const StoryPlayerRN: React.ComponentType<{
+    pages: any[]
+    width?: number
+    autoAdvance?: boolean
+    pageDurationMs?: number
+    initialPageIndex?: number
+    onPageChange?: (index: number) => void
+    onFinish?: () => void
+  }>
 }
