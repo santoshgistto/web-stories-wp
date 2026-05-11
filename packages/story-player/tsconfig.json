@@ -9,6 +9,7 @@
     { "path": "../element-library" },
     { "path": "../elements" },
     { "path": "../masks" },
+    { "path": "../media" },
     { "path": "../patterns" },
     { "path": "../react" },
     { "path": "../transform" },

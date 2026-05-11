@@ -264,7 +264,11 @@ const MOCK_PAGE = {
  * Internal dependencies
  */
 import StoryPlayer from './storyPlayer';
-import { StoryPlayer as PackagedStoryPlayer } from '@googleforcreators/story-player';
+import {
+  StoryPlayer as PackagedStoryPlayer,
+  applyTemplate,
+  findPlaceholders,
+} from '@googleforcreators/story-player';
 import storyData from './story.json';
 
 export default {
@@ -501,6 +505,237 @@ PackagedFullStoryPlayer.parameters = {
     description: {
       story:
         'Same demo as "Full Story Player", but rendered via the standalone @googleforcreators/story-player package (TypeScript, decoupled from the editor footer/PagePreview). Proves the new package is consumable end-to-end.',
+    },
+  },
+  controls: { hideNoControlsWarning: true },
+};
+
+// --- applyTemplate demo --------------------------------------------------
+
+// A small inline "template" story: occasion-themed page where one image
+// element is tagged with `placeholderId: 'memoryPhoto'`. At runtime
+// applyTemplate swaps that placeholder for a user-supplied photo while
+// preserving position, rotation, mask, and animations.
+const TEMPLATE_PAGES = [
+  {
+    id: 'template-page-1',
+    type: 'page',
+    backgroundColor: { color: { r: 240, g: 200, b: 180 } },
+    animations: [
+      {
+        id: 'caption-fade',
+        type: 'effect-fade-in',
+        targets: ['caption'],
+        duration: 800,
+        delay: 200,
+      },
+    ],
+    elements: [
+      {
+        id: 'bg',
+        type: 'shape',
+        isBackground: true,
+        isDefaultBackground: true,
+        x: 1,
+        y: 1,
+        width: 1,
+        height: 1,
+        backgroundColor: { color: { r: 240, g: 200, b: 180 } },
+        mask: { type: 'rectangle' },
+        opacity: 100,
+        rotationAngle: 0,
+        flip: { vertical: false, horizontal: false },
+        lockAspectRatio: true,
+      },
+      {
+        id: 'photo-slot',
+        type: 'image',
+        // The tag applyTemplate looks for:
+        placeholderId: 'memoryPhoto',
+        x: 31,
+        y: 80,
+        width: 350,
+        height: 500,
+        opacity: 100,
+        rotationAngle: -2,
+        flip: { vertical: false, horizontal: false },
+        lockAspectRatio: true,
+        scale: 100,
+        focalX: 50,
+        focalY: 50,
+        mask: { type: 'rectangle' },
+        resource: {
+          type: 'image',
+          mimeType: 'image/png',
+          src: 'https://placehold.co/350x500/cccccc/666666?text=Your+Photo+Here',
+          width: 350,
+          height: 500,
+          alt: 'Photo placeholder',
+        },
+      },
+      {
+        id: 'caption',
+        type: 'text',
+        x: 50,
+        y: 620,
+        width: 312,
+        height: 60,
+        opacity: 100,
+        rotationAngle: 0,
+        flip: { vertical: false, horizontal: false },
+        lockAspectRatio: true,
+        backgroundTextMode: 'NONE',
+        backgroundColor: { color: { r: 240, g: 200, b: 180 } },
+        font: {
+          family: 'Roboto',
+          fallbacks: ['sans-serif'],
+          service: 'fonts.google.com',
+        },
+        fontSize: 36,
+        lineHeight: 1.2,
+        textAlign: 'center',
+        padding: { horizontal: 0, vertical: 0 },
+        content:
+          '<span style="font-weight: 700; color: #28292b">Halloween 2024</span>',
+        tagName: 'p',
+      },
+    ],
+  },
+];
+
+const SAMPLE_USER_PHOTOS = [
+  {
+    label: 'Beach sunset',
+    resource: {
+      type: 'image',
+      mimeType: 'image/jpeg',
+      src: 'https://picsum.photos/id/1018/350/500',
+      width: 350,
+      height: 500,
+      alt: 'Beach sunset',
+    },
+  },
+  {
+    label: 'Forest',
+    resource: {
+      type: 'image',
+      mimeType: 'image/jpeg',
+      src: 'https://picsum.photos/id/1015/350/500',
+      width: 350,
+      height: 500,
+      alt: 'Forest path',
+    },
+  },
+  {
+    label: 'City',
+    resource: {
+      type: 'image',
+      mimeType: 'image/jpeg',
+      src: 'https://picsum.photos/id/1019/350/500',
+      width: 350,
+      height: 500,
+      alt: 'City lights',
+    },
+  },
+];
+
+const TemplateInfo = styled.div`
+  font-family: monospace;
+  font-size: 12px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #333;
+  max-width: 420px;
+`;
+
+const TemplateButton = styled.button`
+  padding: 8px 16px;
+  background-color: ${({ primary }) => (primary ? '#0c66e4' : '#5a5a5a')};
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: ${({ primary }) => (primary ? '#0a54ba' : '#444444')};
+  }
+`;
+
+const TemplateSubstitutionDemo = () => {
+  // -1 = show the raw template (placeholder visible).
+  // 0..N = show template with the Nth sample user photo applied.
+  const [selectedIndex, setSelectedIndex] = useState(-1);
+  const placeholders = findPlaceholders(TEMPLATE_PAGES);
+
+  const renderedPages =
+    selectedIndex === -1
+      ? TEMPLATE_PAGES
+      : applyTemplate(TEMPLATE_PAGES, {
+          memoryPhoto: SAMPLE_USER_PHOTOS[selectedIndex].resource,
+        });
+
+  return (
+    <Container>
+      <TemplateInfo>
+        <div>
+          <strong>findPlaceholders(pages)</strong> →
+        </div>
+        {placeholders.map((p) => (
+          <div key={p.elementId}>
+            • <code>{p.placeholderId}</code> — page <code>{p.pageId}</code>,
+            element <code>{p.elementId}</code> ({p.elementType})
+          </div>
+        ))}
+      </TemplateInfo>
+
+      <PackagedStoryPlayer
+        pages={renderedPages}
+        autoPlay={false}
+        showControls={false}
+      />
+
+      <div
+        style={{
+          marginTop: 20,
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: 10,
+          justifyContent: 'center',
+        }}
+      >
+        <TemplateButton
+          primary={selectedIndex === -1}
+          onClick={() => setSelectedIndex(-1)}
+        >
+          Show template
+        </TemplateButton>
+        {SAMPLE_USER_PHOTOS.map((photo, i) => (
+          <TemplateButton
+            key={photo.label}
+            primary={selectedIndex === i}
+            onClick={() => setSelectedIndex(i)}
+          >
+            Apply: {photo.label}
+          </TemplateButton>
+        ))}
+      </div>
+    </Container>
+  );
+};
+
+export const TemplateSubstitution = () => <TemplateSubstitutionDemo />;
+
+TemplateSubstitution.storyName = 'applyTemplate (memory templating)';
+TemplateSubstitution.parameters = {
+  docs: {
+    description: {
+      story:
+        'Demonstrates the templating workflow: a designer-authored page where the image element is tagged `placeholderId: "memoryPhoto"`. The "Apply" buttons call `applyTemplate(pages, { memoryPhoto: userResource })` and re-render the player with the user\'s photo swapped in — element position, rotation, mask, and animations preserved. This is the runtime hook for personalized memories (e.g., Halloween / flashback templates populated from the user\'s library).',
     },
   },
   controls: { hideNoControlsWarning: true },

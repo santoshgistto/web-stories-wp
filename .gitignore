@@ -3,6 +3,7 @@
 .idea/
 .vscode/
 .DS_Store
+.omc/
 node_modules
 /assets
 /packages/migration/scripts/module.js

@@ -42,6 +42,7 @@
     "@googleforcreators/element-library": "*",
     "@googleforcreators/elements": "*",
     "@googleforcreators/masks": "*",
+    "@googleforcreators/media": "*",
     "@googleforcreators/patterns": "*",
     "@googleforcreators/react": "*",
     "@googleforcreators/transform": "*",

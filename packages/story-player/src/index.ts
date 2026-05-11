@@ -16,9 +16,18 @@ import { elementTypes } from '@googleforcreators/element-library';
 // product, etc.) and rendering looks them up via getDefinitionForType. In
 // the editor this registration happens during editor bootstrap; for a
 // standalone player we do it here so consumers don't have to.
-elementTypes.forEach(registerElementType);
+// element-library's `elementTypes` is a discriminated union TypeScript
+// can't unify with `registerElementType`'s generic — cast at the boundary.
+elementTypes.forEach((definition) =>
+  registerElementType(definition as never)
+);
 
 export { default as StoryPlayer } from './storyPlayer';
 export { PreviewPage, PreviewErrorBoundary } from './preview';
+export { applyTemplate, findPlaceholders } from './applyTemplate';
 export type { StoryPlayerProps, PageSize } from './types';
 export type { PreviewPageSize } from './preview';
+export type {
+  TemplateSubstitutions,
+  PlaceholderInfo,
+} from './applyTemplate';
