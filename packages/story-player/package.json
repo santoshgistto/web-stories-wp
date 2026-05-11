@@ -39,12 +39,13 @@
   },
   "dependencies": {
     "@googleforcreators/animation": "*",
+    "@googleforcreators/element-library": "*",
     "@googleforcreators/elements": "*",
+    "@googleforcreators/masks": "*",
+    "@googleforcreators/patterns": "*",
     "@googleforcreators/react": "*",
-    "@googleforcreators/story-editor": "*",
     "@googleforcreators/transform": "*",
     "@googleforcreators/units": "*",
-    "prop-types": "^15.8.1",
     "styled-components": "^5.3.11"
   },
   "devDependencies": {

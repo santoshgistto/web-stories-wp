@@ -6,9 +6,11 @@
   },
   "references": [
     { "path": "../animation" },
+    { "path": "../element-library" },
     { "path": "../elements" },
+    { "path": "../masks" },
+    { "path": "../patterns" },
     { "path": "../react" },
-    { "path": "../story-editor" },
     { "path": "../transform" },
     { "path": "../units" }
   ],

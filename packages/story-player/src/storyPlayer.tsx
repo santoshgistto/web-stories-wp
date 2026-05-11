@@ -15,13 +15,14 @@ import {
   useMemo,
 } from '@googleforcreators/react';
 import { StoryAnimationState } from '@googleforcreators/animation';
-import { PreviewPage } from '@googleforcreators/story-editor';
 import {
   PAGE_RATIO,
   FULLBLEED_RATIO,
   UnitsProvider,
 } from '@googleforcreators/units';
 import { TransformProvider } from '@googleforcreators/transform';
+
+import { PreviewPage } from './preview';
 
 import type { StoryPlayerProps, PageSize } from './types';
 import {
