@@ -1,1 +1,1411 @@
-{"current":"f2c8af6a-77e0-4511-8652-b33d482a8cb3","selection":[],"story":{"globalStoryStyles":{"colors":[],"textStyles":[]},"title":""},"version":41,"pages":[{"elements":[{"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":true,"x":1,"y":1,"width":1,"height":1,"mask":{"type":"rectangle"},"isBackground":true,"isDefaultBackground":true,"type":"shape","id":"f8595e64-0288-4bd4-8011-4dcb61d9a74f"},{"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":true,"backgroundTextMode":"NONE","font":{"family":"Roboto","weights":[100,300,400,500,700,900],"styles":["italic","regular"],"variants":[[0,100],[0,300],[0,400],[0,500],[0,700],[0,900],[1,100],[1,300],[1,400],[1,500],[1,700],[1,900]],"fallbacks":["Helvetica Neue","Helvetica","sans-serif"],"service":"fonts.google.com","metrics":{"upm":2048,"asc":1900,"des":-500,"tAsc":1536,"tDes":-512,"tLGap":102,"wAsc":1946,"wDes":512,"xH":1082,"capH":1456,"yMin":-555,"yMax":2163,"hAsc":1900,"hDes":-500,"lGap":0}},"fontSize":97,"backgroundColor":{"color":{"r":196,"g":196,"b":196}},"lineHeight":1.19,"textAlign":"left","padding":{"locked":true,"hasHiddenPadding":false,"horizontal":0,"vertical":0},"type":"text","content":"<span style=\"font-weight: 700\">Hello</span>","borderRadius":{"locked":true,"topLeft":2,"topRight":2,"bottomRight":2,"bottomLeft":2},"x":81,"y":287,"width":308,"height":114,"scale":100,"focalX":50,"focalY":50,"id":"2feaac06-fb18-4655-96b3-faccef17d5a3","marginOffset":1.7762499999999903,"tagName":"h1"}],"backgroundColor":{"color":{"r":255,"g":255,"b":255}},"type":"page","id":"f2c8af6a-77e0-4511-8652-b33d482a8cb3"},{"elements":[{"x":1,"y":1,"width":1,"height":1,"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":true,"mask":{"type":"rectangle"},"isBackground":true,"type":"shape","id":"9566ec01-458f-470d-9031-fbcd913bf354","isDefaultBackground":true,"basedOn":"d07dfc60-f3b6-4295-b687-012dd2cfdf8c"},{"x":37,"y":19,"width":337,"height":111,"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":true,"backgroundTextMode":"NONE","font":{"family":"Bungee","service":"fonts.google.com","fallbacks":["cursive"],"weights":[400],"styles":["regular"],"variants":[[0,400]],"metrics":{"upm":1000,"asc":860,"des":-140,"tAsc":860,"tDes":-140,"tLGap":200,"wAsc":1634,"wDes":914,"xH":500,"capH":720,"yMin":-916,"yMax":1636,"hAsc":860,"hDes":-140,"lGap":200}},"backgroundColor":{"color":{"r":196,"g":196,"b":196}},"lineHeight":1,"textAlign":"center","scale":100,"focalX":50,"focalY":50,"type":"text","basedOn":"2d2d9987-93c3-4c06-83c4-8e59dff41e48","id":"55c3ce30-58d8-4cf5-aefc-661d874045f2","content":"<span style=\"color: #28292b; text-transform: uppercase\">More</span>\n<span style=\"color: #28292b; text-transform: uppercase\">Stories</span>","fontSize":55,"padding":{"horizontal":0,"vertical":0},"tagName":"h1"},{"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":false,"backgroundColor":{"color":{"r":220,"g":196,"b":178}},"type":"shape","width":704,"height":152,"scale":100,"focalX":50,"focalY":50,"mask":{"type":"brush-stroke-2"},"basedOn":"95bffcec-5323-4f5d-9eea-8402d676bd2e","id":"5c5ff0a6-4c8f-4304-b1a5-b99ed5e7dd66","x":-15,"y":454},{"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":false,"backgroundColor":{"color":{"r":233,"g":213,"b":197}},"type":"shape","width":569,"height":127,"scale":100,"focalX":50,"focalY":50,"mask":{"type":"brush-stroke-2"},"basedOn":"c83e126a-96a0-4131-8906-6ed69881877e","id":"6fbc5ade-f279-4d17-8c62-16e55beec715","x":-166,"y":310},{"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":false,"backgroundColor":{"color":{"r":234,"g":223,"b":214}},"type":"shape","x":-15,"y":157,"width":496,"height":134,"scale":100,"focalX":50,"focalY":50,"mask":{"type":"brush-stroke-2"},"id":"2ff6cb0d-4830-4db6-b0be-a3bd6ea9cd7e","basedOn":"6ec575af-42c7-4b91-b0ed-49780a002117"},{"x":33,"y":165,"width":116,"height":116,"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":true,"backgroundColor":{"color":{"r":51,"g":51,"b":51}},"scale":220,"focalX":29.72407681721303,"focalY":49.98987897855799,"mask":{"type":"rectangle"},"type":"image","id":"41f4da27-d1c4-4210-a39b-36eee57a5be8","resource":{"type":"image","mimeType":"image/jpeg","src":"https://wp.stories.google/static/main/images/templates/fresh-and-bright/page9_story1.jpg","width":220,"height":124,"posterId":0,"id":0,"alt":"page9_story1","sizes":[],"isExternal":true,"baseColor":"#dbdbdc"},"basedOn":"7fc72830-25a5-47a0-8228-d1adee50581e"},{"x":248,"y":318,"width":116,"height":116,"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":true,"backgroundColor":{"color":{"r":51,"g":51,"b":51}},"scale":100,"focalX":50.133512681795565,"focalY":55.87449925401202,"mask":{"type":"rectangle"},"type":"image","basedOn":"eb703bda-f03c-44b1-8df7-a7970252e4ea","id":"618d2cb4-8481-4c56-93ff-36589214c7bb","resource":{"type":"image","mimeType":"image/jpeg","baseColor":"#e24e51","src":"https://wp.stories.google/static/main/images/templates/fresh-and-bright/page9_story2.jpg","width":352,"height":528,"id":0,"alt":"page9_story2","sizes":[],"isExternal":true}},{"x":33,"y":463,"width":116,"height":116,"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":true,"backgroundColor":{"color":{"r":51,"g":51,"b":51}},"scale":100,"focalX":50.133512681795544,"focalY":41.18825111898196,"mask":{"type":"rectangle"},"type":"image","basedOn":"f36a0781-1fa1-4cf5-9d88-c5a4140f9e77","id":"f841f00b-078b-4d3f-bf96-326564217bfc","resource":{"type":"image","mimeType":"image/jpeg","baseColor":"#3b2220","src":"https://wp.stories.google/static/main/images/templates/fresh-and-bright/page9_story3.jpg","width":220,"height":330,"posterId":0,"id":0,"alt":"page9_story3","sizes":[],"isExternal":true}},{"x":205,"y":203,"width":187,"height":40,"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":false,"backgroundTextMode":"NONE","font":{"family":"Chivo","service":"fonts.google.com","fallbacks":["sans-serif"],"weights":[300,400,700,900],"styles":["italic","regular"],"variants":[[0,300],[0,400],[0,700],[0,900],[1,300],[1,400],[1,700],[1,900]]},"backgroundColor":{"color":{"r":196,"g":196,"b":196}},"lineHeight":1,"textAlign":"left","scale":100,"focalX":50,"focalY":50,"type":"text","basedOn":"e5f86bbb-dd3e-431a-aae3-5a8e00cf6d0f","id":"8960a8db-56d8-4b1e-b02c-f57861f3fec7","content":"<span style=\"color: rgba(40, 41, 43, 1)\"><span style=\"font-weight: 900\">Top 10 Bronzing\nKits for Summer</span></span>","fontSize":20,"padding":{"horizontal":0,"vertical":0},"tagName":"p"},{"x":205,"y":501,"width":187,"height":40,"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":false,"backgroundTextMode":"NONE","font":{"family":"Chivo","service":"fonts.google.com","fallbacks":["sans-serif"],"weights":[300,400,700,900],"styles":["italic","regular"],"variants":[[0,300],[0,400],[0,700],[0,900],[1,300],[1,400],[1,700],[1,900]]},"backgroundColor":{"color":{"r":196,"g":196,"b":196}},"lineHeight":1,"textAlign":"left","scale":100,"focalX":50,"focalY":50,"type":"text","basedOn":"6405d5d0-89ec-4f1e-976e-48eed941608d","id":"0889505c-4c9f-4635-99fc-ce0b57ab9118","content":"<span style=\"color: rgba(40, 41, 43, 1)\"><span style=\"font-weight: 900\">Use the Fenty\nShade Finder</span></span>","fontSize":20,"padding":{"horizontal":0,"vertical":0},"tagName":"p"},{"x":40,"y":356,"width":187,"height":40,"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":false,"backgroundTextMode":"NONE","font":{"family":"Chivo","service":"fonts.google.com","fallbacks":["sans-serif"],"weights":[300,400,700,900],"styles":["italic","regular"],"variants":[[0,300],[0,400],[0,700],[0,900],[1,300],[1,400],[1,700],[1,900]]},"backgroundColor":{"color":{"r":196,"g":196,"b":196}},"lineHeight":1,"textAlign":"left","scale":100,"focalX":50,"focalY":50,"type":"text","basedOn":"41f71d08-27df-4137-94b7-eaf0aec0d16c","id":"bd5a94a6-958e-40fa-b325-c6301e91202a","content":"<span style=\"color: rgba(40, 41, 43, 1)\"><span style=\"font-weight: 900\">This Year's\nK-Beauty Trends</span></span>","fontSize":20,"padding":{"horizontal":0,"vertical":0},"tagName":"p"}],"animations":[{"id":"32a4ef62-0a9e-455b-84ba-16fa635623e3","type":"effect-pulse","targets":["55c3ce30-58d8-4cf5-aefc-661d874045f2"],"scale":0.15,"iterations":1,"duration":1200,"delay":0},{"id":"cdb6db48-ad7b-4285-aa6a-7ebbcd844597","type":"effect-fade-in","targets":["41f4da27-d1c4-4210-a39b-36eee57a5be8"],"duration":1200,"delay":0},{"id":"ded06bc3-1640-4e8a-b691-b20f88eb2900","type":"effect-fade-in","targets":["618d2cb4-8481-4c56-93ff-36589214c7bb"],"duration":1201,"delay":100},{"id":"b5161601-1486-4a89-999c-3c9a909bfabd","type":"effect-fade-in","targets":["f841f00b-078b-4d3f-bf96-326564217bfc"],"duration":1200,"delay":200}],"type":"page","id":"ccdeb2bb-c06e-4941-a7fc-87afe41dff59","backgroundColor":{"color":{"r":255,"g":255,"b":255}},"pageTemplateType":"list"},{"elements":[{"x":1,"y":1,"width":1,"height":1,"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":true,"mask":{"type":"rectangle"},"isBackground":true,"type":"shape","id":"924d0ab3-136f-493f-97d8-558d0aadf92e","isDefaultBackground":true,"basedOn":"17f22a0e-aae4-4eff-9cee-5020ca545950"},{"x":-1,"y":392,"width":296,"height":225,"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":false,"backgroundColor":{"color":{"r":216,"g":221,"b":204}},"scale":100,"focalX":50,"focalY":50,"mask":{"type":"rectangle"},"type":"shape","id":"fc4924c1-b540-433a-8e16-40e26af1c026","basedOn":"66c7e85f-72de-4dda-93cd-c3d114332275"},{"x":135,"y":74,"width":277,"height":243,"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":false,"backgroundColor":{"color":{"r":216,"g":221,"b":204}},"scale":100,"focalX":50,"focalY":50,"mask":{"type":"rectangle"},"type":"shape","basedOn":"6b601d9d-0aa0-4c11-8077-19881fb1f744","id":"4bb7c8ae-d6ad-481e-ad1c-8d79165fc526"},{"x":167,"y":-57,"width":212,"height":264,"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":false,"backgroundColor":{"color":{"r":51,"g":51,"b":51}},"scale":100,"focalX":50,"focalY":50,"mask":{"type":"rectangle"},"type":"image","id":"d6fdbcc7-4a19-4967-8f07-6bd0cb038b45","resource":{"type":"image","mimeType":"image/jpeg","src":"https://wp.stories.google/static/main/images/templates/fresh-and-bright/page7_product1.jpg","width":220,"height":275,"posterId":0,"id":0,"alt":"page7_product1","sizes":[],"isExternal":true,"baseColor":"#cfb1aa"},"basedOn":"ca75cd7a-c9d1-48ac-8d4a-1268023e88d3"},{"x":51,"y":358,"width":285,"height":179,"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":false,"backgroundColor":{"color":{"r":51,"g":51,"b":51}},"scale":140,"focalX":46.14708413831984,"focalY":62.898892232581424,"mask":{"type":"rectangle"},"type":"image","id":"36c95df6-c8e7-4506-99aa-f535b56a8eee","resource":{"type":"image","mimeType":"image/jpeg","src":"https://wp.stories.google/static/main/images/templates/fresh-and-bright/page7_product2.jpg","width":220,"height":184,"posterId":0,"id":0,"alt":"page7_product2","sizes":[],"isExternal":true,"baseColor":"#a87155"},"basedOn":"8e829ac4-0b1a-42b5-b519-a7941b98b768"},{"x":71,"y":233,"width":125,"height":43,"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":true,"backgroundColor":{"color":{"r":51,"g":51,"b":51}},"scale":100,"focalX":50,"focalY":50,"mask":{"type":"rectangle"},"type":"shape","basedOn":"e7d293d9-09be-439d-a665-09a7d5427ce0","id":"487f893d-bbf7-4801-b93e-b0890a46d102"},{"x":58,"y":244,"width":150,"height":22,"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":true,"backgroundTextMode":"NONE","font":{"family":"Raleway","service":"fonts.google.com","fallbacks":["sans-serif"],"weights":[100,200,300,400,500,600,700,800,900],"styles":["italic","regular"],"variants":[[0,100],[0,200],[0,300],[0,400],[0,500],[0,600],[0,700],[0,800],[0,900],[1,100],[1,200],[1,300],[1,400],[1,500],[1,600],[1,700],[1,800],[1,900]]},"backgroundColor":{"color":{"r":196,"g":196,"b":196}},"lineHeight":1.3,"textAlign":"center","scale":100,"focalX":50,"focalY":50,"type":"text","basedOn":"61b7afa6-8306-4656-b0f6-b47a43350b9a","id":"215d5d96-f8fe-40df-8a2d-2b294c826bea","content":"<span style=\"font-weight: 500; color: #fff\">Buy Now</span>","fontSize":16,"padding":{"horizontal":0,"vertical":0},"tagName":"p"},{"x":53,"y":555,"width":189,"height":26,"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":true,"backgroundTextMode":"NONE","font":{"family":"Chivo","service":"fonts.google.com","fallbacks":["sans-serif"],"weights":[300,400,700,900],"styles":["italic","regular"],"variants":[[0,300],[0,400],[0,700],[0,900],[1,300],[1,400],[1,700],[1,900]]},"backgroundColor":{"color":{"r":196,"g":196,"b":196}},"lineHeight":1.3,"textAlign":"initial","scale":100,"focalX":50,"focalY":50,"type":"text","basedOn":"ac0add24-bf97-46a4-abe0-1241f0e91a20","id":"140f801f-d68f-4b61-ac39-00677ea43aec","content":"<span style=\"color: rgba(40, 41, 43, 1)\"><span style=\"font-weight: 900\">Lid Shimmer $12</span></span>","fontSize":20,"padding":{"horizontal":0,"vertical":0},"tagName":"p"},{"x":53,"y":576,"width":239,"height":20,"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":true,"backgroundTextMode":"NONE","font":{"family":"Raleway","service":"fonts.google.com","fallbacks":["sans-serif"],"weights":[100,200,300,400,500,600,700,800,900],"styles":["italic","regular"],"variants":[[0,100],[0,200],[0,300],[0,400],[0,500],[0,600],[0,700],[0,800],[0,900],[1,100],[1,200],[1,300],[1,400],[1,500],[1,600],[1,700],[1,800],[1,900]]},"backgroundColor":{"color":{"r":196,"g":196,"b":196}},"lineHeight":1.3,"textAlign":"left","scale":100,"focalX":50,"focalY":50,"type":"text","basedOn":"479bdbea-1369-40c8-bcb7-96d82fb8b36c","id":"2f826430-5107-40e2-b734-8d7c6905a3f8","content":"<span style=\"color: rgba(40, 41, 43, 1)\">website.com</span>","fontSize":16,"padding":{"horizontal":0,"vertical":0},"tagName":"p"},{"x":236,"y":231,"width":189,"height":26,"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":true,"backgroundTextMode":"NONE","font":{"family":"Chivo","service":"fonts.google.com","fallbacks":["sans-serif"],"weights":[300,400,700,900],"styles":["italic","regular"],"variants":[[0,300],[0,400],[0,700],[0,900],[1,300],[1,400],[1,700],[1,900]]},"backgroundColor":{"color":{"r":196,"g":196,"b":196}},"lineHeight":1.3,"textAlign":"initial","scale":100,"focalX":50,"focalY":50,"type":"text","basedOn":"d07cf4f9-46d9-420c-aa06-ad4e406b7a42","id":"2cb605d5-ffa5-45f2-b2ef-8b8cf4b0662a","content":"<span style=\"color: rgba(40, 41, 43, 1)\"><span style=\"font-weight: 900\">Lip Tattoo $18</span></span>","fontSize":20,"padding":{"horizontal":0,"vertical":0},"tagName":"p"},{"x":236,"y":253,"width":239,"height":20,"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":true,"backgroundTextMode":"NONE","font":{"family":"Raleway","service":"fonts.google.com","fallbacks":["sans-serif"],"weights":[100,200,300,400,500,600,700,800,900],"styles":["italic","regular"],"variants":[[0,100],[0,200],[0,300],[0,400],[0,500],[0,600],[0,700],[0,800],[0,900],[1,100],[1,200],[1,300],[1,400],[1,500],[1,600],[1,700],[1,800],[1,900]]},"backgroundColor":{"color":{"r":196,"g":196,"b":196}},"lineHeight":1.3,"textAlign":"left","scale":100,"focalX":50,"focalY":50,"type":"text","basedOn":"6017e32e-c0fb-4ea3-8876-aaaa1b2bbef5","id":"86eb7efd-b42f-4147-8ac3-07d68d9c69ea","content":"<span style=\"color: #28292b\">website.com</span>","fontSize":16,"padding":{"horizontal":0,"vertical":0},"tagName":"p"},{"x":250,"y":557,"width":125,"height":43,"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":true,"backgroundColor":{"color":{"r":51,"g":51,"b":51}},"scale":100,"focalX":50,"focalY":50,"mask":{"type":"rectangle"},"type":"shape","basedOn":"0bc138cd-b9ba-469c-b43b-8610b9b70565","id":"7bbe1923-07aa-441a-89fb-e764a03a553f"},{"x":238,"y":567,"width":150,"height":20,"opacity":100,"flip":{"vertical":false,"horizontal":false},"rotationAngle":0,"lockAspectRatio":true,"backgroundTextMode":"NONE","font":{"family":"Raleway","service":"fonts.google.com","fallbacks":["sans-serif"],"weights":[100,200,300,400,500,600,700,800,900],"styles":["italic","regular"],"variants":[[0,100],[0,200],[0,300],[0,400],[0,500],[0,600],[0,700],[0,800],[0,900],[1,100],[1,200],[1,300],[1,400],[1,500],[1,600],[1,700],[1,800],[1,900]]},"backgroundColor":{"color":{"r":196,"g":196,"b":196}},"lineHeight":1.3,"textAlign":"center","scale":100,"focalX":50,"focalY":50,"type":"text","basedOn":"3a38df92-03f4-4576-8d59-928c9412c39e","id":"de66840a-1955-4a4f-8649-068be999061c","content":"<span style=\"color: rgba(255, 255, 255, 1)\"><span style=\"font-weight: 500\">Buy Now</span></span>","fontSize":16,"padding":{"horizontal":0,"vertical":0},"tagName":"p"}],"animations":[{"id":"2e23d4ac-bda5-4d04-9a38-80e058aedb1f","type":"effect-fade-in","targets":["d6fdbcc7-4a19-4967-8f07-6bd0cb038b45"],"duration":3000,"delay":0},{"id":"4840ba71-d670-4784-8662-6758bd9022e7","type":"effect-fade-in","targets":["36c95df6-c8e7-4506-99aa-f535b56a8eee"],"duration":3000,"delay":200}],"type":"page","id":"d4811309-da76-4cad-8680-830eb9331d0e","backgroundColor":{"color":{"r":255,"g":255,"b":255}},"pageTemplateType":"editorial"}]}
+{
+  "current": "9ac6958c-ea84-49ea-8178-b8f913543d8d",
+  "selection": [],
+  "story": {
+    "globalStoryStyles": {
+      "colors": [],
+      "textStyles": []
+    }
+  },
+  "version": 41,
+  "pages": [
+    {
+      "elements": [
+        {
+          "x": 234,
+          "y": -160,
+          "width": 206,
+          "height": 366,
+          "opacity": 100,
+          "flip": {
+            "vertical": false,
+            "horizontal": false
+          },
+          "rotationAngle": 0,
+          "lockAspectRatio": true,
+          "backgroundColor": {
+            "color": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "mask": {
+            "type": "rectangle"
+          },
+          "isBackground": true,
+          "type": "image",
+          "id": "765ead0e-b073-4881-bfd1-909885021eb2",
+          "resource": {
+            "type": "image",
+            "mimeType": "image/png",
+            "src": "https://wp.stories.google/static/main/images/templates/fresh-and-bright/page1_bg-alt.png",
+            "width": 206,
+            "height": 366,
+            "id": 0,
+            "alt": "page1_bg-alt",
+            "sizes": [],
+            "isExternal": true,
+            "baseColor": "#35312f"
+          },
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "basedOn": "9ecb248e-2adc-4834-a270-01325263a30e"
+        },
+        {
+          "opacity": 100,
+          "flip": {
+            "vertical": false,
+            "horizontal": false
+          },
+          "rotationAngle": 0,
+          "lockAspectRatio": false,
+          "backgroundColor": {
+            "color": {
+              "r": 243,
+              "g": 217,
+              "b": 225
+            }
+          },
+          "type": "shape",
+          "x": -6,
+          "y": 415,
+          "width": 798,
+          "height": 382,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "mask": {
+            "type": "brush-stroke-1"
+          },
+          "id": "3ddf2017-89aa-46dd-a263-259fe9113441",
+          "basedOn": "c2cb4adc-8209-4441-83f3-94fb5dba59eb"
+        },
+        {
+          "x": 49,
+          "y": 442,
+          "width": 337,
+          "height": 165,
+          "opacity": 100,
+          "flip": {
+            "vertical": false,
+            "horizontal": false
+          },
+          "rotationAngle": 0,
+          "lockAspectRatio": true,
+          "backgroundTextMode": "NONE",
+          "font": {
+            "family": "Bungee",
+            "service": "fonts.google.com",
+            "fallbacks": [
+              "cursive"
+            ],
+            "weights": [
+              400
+            ],
+            "styles": [
+              "regular"
+            ],
+            "variants": [
+              [
+                0,
+                400
+              ]
+            ]
+          },
+          "backgroundColor": {
+            "color": {
+              "r": 196,
+              "g": 196,
+              "b": 196
+            }
+          },
+          "lineHeight": 1,
+          "textAlign": "center",
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "type": "text",
+          "basedOn": "25b6f99b-3f69-4351-9e18-31b8ef1d1a61",
+          "id": "24a67f08-6ffa-4cb1-beb1-feaebaffd630",
+          "content": "<span style=\"color: #28292b; letter-spacing: 0.09em; text-transform: uppercase\">Fresh</span>\n<span style=\"color: #28292b; letter-spacing: 0.09em; text-transform: uppercase\">&amp;&nbsp;</span>\n<span style=\"color: #28292b; letter-spacing: 0.09em; text-transform: uppercase\">Bright</span>",
+          "fontSize": 55,
+          "padding": {
+            "horizontal": 0,
+            "vertical": 0
+          },
+          "tagName": "h1"
+        },
+        {
+          "opacity": 100,
+          "flip": {
+            "vertical": false,
+            "horizontal": false
+          },
+          "rotationAngle": 0,
+          "lockAspectRatio": true,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "resource": {
+            "type": "image",
+            "mimeType": "image/png",
+            "src": "https://wp.stories.google/static/main/images/templates/fresh-and-bright/page1_logo-generic.png",
+            "width": 32,
+            "height": 10,
+            "id": 0,
+            "alt": "page1_logo-generic",
+            "sizes": [],
+            "isExternal": true,
+            "baseColor": "#ffffff"
+          },
+          "type": "image",
+          "x": 42,
+          "y": 22,
+          "width": 60,
+          "height": 19,
+          "mask": {
+            "type": "rectangle",
+            "name": "Rectangle",
+            "path": "M 0,0 1,0 1,1 0,1 0,0 Z",
+            "ratio": 1
+          },
+          "id": "1627d4f6-4a9e-470a-ad03-2cb0d9d8b0a1",
+          "basedOn": "9f187764-e909-416f-8820-9d24ac15f192"
+        }
+      ],
+      "animations": [
+        {
+          "id": "defb3744-5c34-4e26-b782-040ce754e3ba",
+          "type": "effect-background-zoom",
+          "targets": [
+            "765ead0e-b073-4881-bfd1-909885021eb2"
+          ],
+          "zoomDirection": "scaleOut",
+          "duration": 800,
+          "delay": 0
+        },
+        {
+          "id": "3679961d-5615-41de-80ac-ee18e80c7735",
+          "type": "effect-pulse",
+          "targets": [
+            "24a67f08-6ffa-4cb1-beb1-feaebaffd630"
+          ],
+          "scale": 0.15,
+          "iterations": 1,
+          "duration": 1400,
+          "delay": 480
+        }
+      ],
+      "type": "page",
+      "id": "4d63bc6d-837a-4c0f-b28f-96b429a3f08a",
+      "defaultBackgroundElement": {
+        "type": "shape",
+        "x": 1,
+        "y": 1,
+        "width": 1,
+        "height": 1,
+        "rotationAngle": 0,
+        "mask": {
+          "type": "rectangle"
+        },
+        "backgroundColor": {
+          "color": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          }
+        },
+        "isBackground": true,
+        "isDefaultBackground": true,
+        "id": "eaf6765f-8506-48c9-a526-15917b431464"
+      },
+      "backgroundColor": {
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        }
+      },
+      "pageTemplateType": "cover"
+    },
+    {
+      "elements": [
+        {
+          "opacity": 100,
+          "flip": {
+            "vertical": false,
+            "horizontal": false
+          },
+          "rotationAngle": 0,
+          "lockAspectRatio": true,
+          "x": 48,
+          "y": 0,
+          "width": 330,
+          "height": 494,
+          "mask": {
+            "type": "rectangle"
+          },
+          "isBackground": true,
+          "type": "image",
+          "id": "58fa95c2-aaba-4c79-b89b-4a3caf02cd3e",
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "resource": {
+            "baseColor": "#8c7359",
+            "blurHash": "LHGb0I~V4.V?8yR5n}slI9Io-;R+",
+            "type": "image",
+            "mimeType": "image/jpeg",
+            "creationDate": "2026-03-12T16:24:21Z",
+            "src": "https://images.unsplash.com/photo-1773332611516-93826171cef2?ixid=M3wxMzcxOTN8MXwxfGFsbHwxfHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=5405&h=8103&fit=max",
+            "width": 5405,
+            "height": 8103,
+            "id": "media/unsplash:QvVI6vAqtg8",
+            "alt": "Woman using a smartphone on a yoga mat.",
+            "sizes": {
+              "full": {
+                "file": "media/unsplash:QvVI6vAqtg8",
+                "sourceUrl": "https://images.unsplash.com/photo-1773332611516-93826171cef2?ixid=M3wxMzcxOTN8MXwxfGFsbHwxfHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=5405&h=8103&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 5405,
+                "height": 8103
+              },
+              "large": {
+                "file": "media/unsplash:QvVI6vAqtg8",
+                "sourceUrl": "https://images.unsplash.com/photo-1773332611516-93826171cef2?ixid=M3wxMzcxOTN8MXwxfGFsbHwxfHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=4324&h=6482&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 4324,
+                "height": 6482
+              },
+              "3243_4862": {
+                "file": "media/unsplash:QvVI6vAqtg8",
+                "sourceUrl": "https://images.unsplash.com/photo-1773332611516-93826171cef2?ixid=M3wxMzcxOTN8MXwxfGFsbHwxfHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=3243&h=4862&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 3243,
+                "height": 4862
+              },
+              "2162_3241": {
+                "file": "media/unsplash:QvVI6vAqtg8",
+                "sourceUrl": "https://images.unsplash.com/photo-1773332611516-93826171cef2?ixid=M3wxMzcxOTN8MXwxfGFsbHwxfHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=2162&h=3241&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 2162,
+                "height": 3241
+              },
+              "1081_1621": {
+                "file": "media/unsplash:QvVI6vAqtg8",
+                "sourceUrl": "https://images.unsplash.com/photo-1773332611516-93826171cef2?ixid=M3wxMzcxOTN8MXwxfGFsbHwxfHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=1081&h=1621&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 1081,
+                "height": 1621
+              },
+              "web_stories_thumbnail": {
+                "file": "media/unsplash:QvVI6vAqtg8",
+                "sourceUrl": "https://images.unsplash.com/photo-1773332611516-93826171cef2?ixid=M3wxMzcxOTN8MXwxfGFsbHwxfHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=340&h=510&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 340,
+                "height": 510
+              }
+            },
+            "attribution": {
+              "author": {
+                "displayName": "Microsoft Copilot",
+                "url": "https://unsplash.com/@microsoftcopilot?utm_source=web_stories_wordpress&utm_medium=referral"
+              },
+              "registerUsageUrl": "https://media3p.googleapis.com/v1/media:registerUsage?token=ASxalWlTXkE1627WStqeHWXspvuzSy8mxfjop/Qiign0%2BlO1wOUMR8rvojYtg5Anfn1DkIhYzVmLTDGp7mvLvPm2729n18hJ2FfWD9Y%2BOzyVcoZZZKhwpapRy0J9uDHNXNo6HdaR3eGESjqiE9Ybx7T4A7KD8ZUFW8b0VTSkIELJ3RG9g0hsabM0L/LXkmKbtdzx0WcUd3WHOsze5tnr99Y%2B"
+            },
+            "isPlaceholder": false,
+            "isOptimized": false,
+            "isMuted": false,
+            "isExternal": true,
+            "needsProxy": false
+          }
+        }
+      ],
+      "backgroundColor": {
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "type": "page",
+      "id": "1cee734a-e69a-4d55-abcf-6f1b9b64cf68",
+      "defaultBackgroundElement": {
+        "opacity": 100,
+        "flip": {
+          "vertical": false,
+          "horizontal": false
+        },
+        "rotationAngle": 0,
+        "lockAspectRatio": true,
+        "x": 1,
+        "y": 1,
+        "width": 1,
+        "height": 1,
+        "mask": {
+          "type": "rectangle"
+        },
+        "isBackground": true,
+        "isDefaultBackground": true,
+        "type": "shape",
+        "id": "08aaccdc-9b04-46f9-a4ca-48be51308924"
+      },
+      "animations": [
+        {
+          "id": "fc6b057a-a712-4cbd-868c-b2259f303eed",
+          "type": "effect-background-zoom",
+          "zoomDirection": "scaleOut",
+          "duration": 2000,
+          "delay": 0,
+          "targets": [
+            "58fa95c2-aaba-4c79-b89b-4a3caf02cd3e"
+          ]
+        }
+      ]
+    },
+    {
+      "elements": [
+        {
+          "opacity": 100,
+          "flip": {
+            "vertical": false,
+            "horizontal": false
+          },
+          "rotationAngle": 0,
+          "lockAspectRatio": true,
+          "x": 48,
+          "y": 0,
+          "width": 330,
+          "height": 494,
+          "mask": {
+            "type": "rectangle"
+          },
+          "isBackground": true,
+          "type": "image",
+          "id": "3cd41353-88b1-40a7-8715-50c633f9ddd2",
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "resource": {
+            "baseColor": "#0c2626",
+            "blurHash": "L87ng.%gIo%gn$RPROjs00V@$*M{",
+            "type": "image",
+            "mimeType": "image/jpeg",
+            "creationDate": "2026-05-10T05:49:37Z",
+            "src": "https://images.unsplash.com/photo-1778392120781-a6b2b55dc12a?ixid=M3wxMzcxOTN8MHwxfGFsbHwyfHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=4000&h=6000&fit=max",
+            "width": 4000,
+            "height": 6000,
+            "id": "media/unsplash:GE5T26wd3QM",
+            "alt": "Aerial view of a bustling city street at night.",
+            "sizes": {
+              "full": {
+                "file": "media/unsplash:GE5T26wd3QM",
+                "sourceUrl": "https://images.unsplash.com/photo-1778392120781-a6b2b55dc12a?ixid=M3wxMzcxOTN8MHwxfGFsbHwyfHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=4000&h=6000&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 4000,
+                "height": 6000
+              },
+              "large": {
+                "file": "media/unsplash:GE5T26wd3QM",
+                "sourceUrl": "https://images.unsplash.com/photo-1778392120781-a6b2b55dc12a?ixid=M3wxMzcxOTN8MHwxfGFsbHwyfHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=3200&h=4800&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 3200,
+                "height": 4800
+              },
+              "2400_3600": {
+                "file": "media/unsplash:GE5T26wd3QM",
+                "sourceUrl": "https://images.unsplash.com/photo-1778392120781-a6b2b55dc12a?ixid=M3wxMzcxOTN8MHwxfGFsbHwyfHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=2400&h=3600&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 2400,
+                "height": 3600
+              },
+              "1600_2400": {
+                "file": "media/unsplash:GE5T26wd3QM",
+                "sourceUrl": "https://images.unsplash.com/photo-1778392120781-a6b2b55dc12a?ixid=M3wxMzcxOTN8MHwxfGFsbHwyfHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=1600&h=2400&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 1600,
+                "height": 2400
+              },
+              "800_1200": {
+                "file": "media/unsplash:GE5T26wd3QM",
+                "sourceUrl": "https://images.unsplash.com/photo-1778392120781-a6b2b55dc12a?ixid=M3wxMzcxOTN8MHwxfGFsbHwyfHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=800&h=1200&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 800,
+                "height": 1200
+              },
+              "web_stories_thumbnail": {
+                "file": "media/unsplash:GE5T26wd3QM",
+                "sourceUrl": "https://images.unsplash.com/photo-1778392120781-a6b2b55dc12a?ixid=M3wxMzcxOTN8MHwxfGFsbHwyfHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=340&h=510&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 340,
+                "height": 510
+              }
+            },
+            "attribution": {
+              "author": {
+                "displayName": "Kevin Bonilla",
+                "url": "https://unsplash.com/@kevinography?utm_source=web_stories_wordpress&utm_medium=referral"
+              },
+              "registerUsageUrl": "https://media3p.googleapis.com/v1/media:registerUsage?token=ASxalWnNzP2yt0dld1OhuYAJ65waNcjXCBmHQ4dpfclDax6ELOFU1GESRW7%2BRR0Q8Nx35XskvgQQ%2B57nQ6Xu0hcH8AZK4tL4HAFfBwJIraDbN//nwl5FeY1gPvpyz5%2BUdFZYlD1uIgQvJM%2ByINPXUQigyeyBuJldvqcFdNRHM8lqPcYmBMA1P77X4W5YjwpTkYdFuhHjTIblscr/Zv1l%2B4RN"
+            },
+            "isPlaceholder": false,
+            "isOptimized": false,
+            "isMuted": false,
+            "isExternal": true,
+            "needsProxy": false
+          }
+        }
+      ],
+      "backgroundColor": {
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "type": "page",
+      "id": "cfce660f-bbe6-484d-9214-d75fc7baedee",
+      "defaultBackgroundElement": {
+        "opacity": 100,
+        "flip": {
+          "vertical": false,
+          "horizontal": false
+        },
+        "rotationAngle": 0,
+        "lockAspectRatio": true,
+        "x": 1,
+        "y": 1,
+        "width": 1,
+        "height": 1,
+        "mask": {
+          "type": "rectangle"
+        },
+        "isBackground": true,
+        "isDefaultBackground": true,
+        "type": "shape",
+        "id": "66626ee6-b07c-4c44-b4de-6e1f3b984fb3"
+      },
+      "animations": [
+        {
+          "id": "34db71e2-fc6e-4a66-b03c-c1b4ce5de9ec",
+          "type": "effect-background-zoom",
+          "zoomDirection": "scaleOut",
+          "duration": 2000,
+          "delay": 0,
+          "targets": [
+            "3cd41353-88b1-40a7-8715-50c633f9ddd2"
+          ]
+        }
+      ]
+    },
+    {
+      "elements": [
+        {
+          "opacity": 100,
+          "flip": {
+            "vertical": false,
+            "horizontal": false
+          },
+          "rotationAngle": 0,
+          "lockAspectRatio": true,
+          "x": 48,
+          "y": 0,
+          "width": 330,
+          "height": 494,
+          "mask": {
+            "type": "rectangle"
+          },
+          "isBackground": true,
+          "type": "image",
+          "id": "cc50f57a-840e-4028-a9f1-86876eb4195f",
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "resource": {
+            "baseColor": "#594059",
+            "blurHash": "LgE-gsNb$%xZR;s.R+WC0zoKNHR*",
+            "type": "image",
+            "mimeType": "image/jpeg",
+            "creationDate": "2026-04-29T07:05:38Z",
+            "src": "https://images.unsplash.com/photo-1777446039915-96505c45ca99?ixid=M3wxMzcxOTN8MHwxfGFsbHw2fHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=6392&h=9588&fit=max",
+            "width": 6392,
+            "height": 9588,
+            "id": "media/unsplash:Gryhv0_l5k8",
+            "alt": "Silhouette of a rocky island with trees at sunset.",
+            "sizes": {
+              "full": {
+                "file": "media/unsplash:Gryhv0_l5k8",
+                "sourceUrl": "https://images.unsplash.com/photo-1777446039915-96505c45ca99?ixid=M3wxMzcxOTN8MHwxfGFsbHw2fHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=6392&h=9588&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 6392,
+                "height": 9588
+              },
+              "large": {
+                "file": "media/unsplash:Gryhv0_l5k8",
+                "sourceUrl": "https://images.unsplash.com/photo-1777446039915-96505c45ca99?ixid=M3wxMzcxOTN8MHwxfGFsbHw2fHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=5113&h=7670&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 5113,
+                "height": 7670
+              },
+              "3835_5753": {
+                "file": "media/unsplash:Gryhv0_l5k8",
+                "sourceUrl": "https://images.unsplash.com/photo-1777446039915-96505c45ca99?ixid=M3wxMzcxOTN8MHwxfGFsbHw2fHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=3835&h=5753&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 3835,
+                "height": 5753
+              },
+              "2556_3834": {
+                "file": "media/unsplash:Gryhv0_l5k8",
+                "sourceUrl": "https://images.unsplash.com/photo-1777446039915-96505c45ca99?ixid=M3wxMzcxOTN8MHwxfGFsbHw2fHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=2556&h=3834&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 2556,
+                "height": 3834
+              },
+              "1278_1917": {
+                "file": "media/unsplash:Gryhv0_l5k8",
+                "sourceUrl": "https://images.unsplash.com/photo-1777446039915-96505c45ca99?ixid=M3wxMzcxOTN8MHwxfGFsbHw2fHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=1278&h=1917&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 1278,
+                "height": 1917
+              },
+              "web_stories_thumbnail": {
+                "file": "media/unsplash:Gryhv0_l5k8",
+                "sourceUrl": "https://images.unsplash.com/photo-1777446039915-96505c45ca99?ixid=M3wxMzcxOTN8MHwxfGFsbHw2fHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=340&h=510&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 340,
+                "height": 510
+              }
+            },
+            "attribution": {
+              "author": {
+                "displayName": "Kseniia Lobko",
+                "url": "https://unsplash.com/@hello_kseniia?utm_source=web_stories_wordpress&utm_medium=referral"
+              },
+              "registerUsageUrl": "https://media3p.googleapis.com/v1/media:registerUsage?token=ASxalWnhwev8loYtkyjvd7TIOHfDaW0mZGIX4OrejYNTw1f7VJrTLSSRTTQvCaz1Z0KEFUE2NkPefzCgFM6mxwHBT0suRsYlbJYSCpVffB7A6IyjjsAW5EjzBN1EtnYBrarPxpxIeJ3j7u6LoXjI9%2BKO/mcEzTlfCCNW9rTjFLhcmR6YGI9OAyHuBfunH%2B9dYYcRxD9QY%2BVxinaDDn6imihE"
+            },
+            "isPlaceholder": false,
+            "isOptimized": false,
+            "isMuted": false,
+            "isExternal": true,
+            "needsProxy": false
+          }
+        },
+        {
+          "opacity": 100,
+          "flip": {
+            "vertical": false,
+            "horizontal": false
+          },
+          "rotationAngle": 0,
+          "lockAspectRatio": false,
+          "backgroundColor": {
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "type": "shape",
+          "x": 25,
+          "y": 350,
+          "width": 363,
+          "height": 266,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "mask": {
+            "type": "rectangle"
+          },
+          "id": "95e92a1a-0974-43e4-bfeb-1b7425637e4e"
+        },
+        {
+          "opacity": 100,
+          "flip": {
+            "vertical": false,
+            "horizontal": false
+          },
+          "rotationAngle": 0,
+          "lockAspectRatio": false,
+          "backgroundTextMode": "NONE",
+          "font": {
+            "family": "Oswald",
+            "service": "fonts.google.com",
+            "fallbacks": [
+              "sans-serif"
+            ],
+            "weights": [
+              200,
+              300,
+              400,
+              500,
+              600,
+              700
+            ],
+            "styles": [
+              "regular"
+            ],
+            "variants": [
+              [
+                0,
+                200
+              ],
+              [
+                0,
+                300
+              ],
+              [
+                0,
+                400
+              ],
+              [
+                0,
+                500
+              ],
+              [
+                0,
+                600
+              ],
+              [
+                0,
+                700
+              ]
+            ],
+            "metrics": {
+              "upm": 1000,
+              "asc": 1193,
+              "des": -289,
+              "tAsc": 1193,
+              "tDes": -289,
+              "tLGap": 0,
+              "wAsc": 1325,
+              "wDes": 377,
+              "xH": 578,
+              "capH": 810,
+              "yMin": -287,
+              "yMax": 1297,
+              "hAsc": 1193,
+              "hDes": -289,
+              "lGap": 0
+            }
+          },
+          "fontSize": 24,
+          "backgroundColor": {
+            "color": {
+              "r": 196,
+              "g": 196,
+              "b": 196
+            }
+          },
+          "lineHeight": 1.2,
+          "textAlign": "left",
+          "padding": {
+            "locked": true,
+            "horizontal": 0,
+            "vertical": 0
+          },
+          "type": "text",
+          "content": "<span style=\"font-weight: 300; color: #fff\">Category</span>",
+          "fontWeight": 400,
+          "basedOn": "f77e3d81-d7d2-480a-b185-4a509a452b76",
+          "marginOffset": -7.049999999999997,
+          "x": 40,
+          "y": 365,
+          "width": 112,
+          "height": 35,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "id": "ed8c93b9-b534-4fbe-97c0-01938f76b362",
+          "tagName": "h3"
+        },
+        {
+          "opacity": 100,
+          "flip": {
+            "vertical": false,
+            "horizontal": false
+          },
+          "rotationAngle": 0,
+          "lockAspectRatio": true,
+          "backgroundColor": {
+            "color": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "type": "shape",
+          "basedOn": "e6be672d-e0cb-4d5b-aef3-a223cf9914bf",
+          "x": 41,
+          "y": 402,
+          "width": 331,
+          "height": 1,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "mask": {
+            "type": "rectangle"
+          },
+          "id": "2afe3e67-0b80-460b-aab7-0cced501c6a1"
+        },
+        {
+          "opacity": 100,
+          "flip": {
+            "vertical": false,
+            "horizontal": false
+          },
+          "rotationAngle": 0,
+          "lockAspectRatio": true,
+          "backgroundTextMode": "NONE",
+          "font": {
+            "family": "Oswald",
+            "service": "fonts.google.com",
+            "fallbacks": [
+              "sans-serif"
+            ],
+            "weights": [
+              200,
+              300,
+              400,
+              500,
+              600,
+              700
+            ],
+            "styles": [
+              "regular"
+            ],
+            "variants": [
+              [
+                0,
+                200
+              ],
+              [
+                0,
+                300
+              ],
+              [
+                0,
+                400
+              ],
+              [
+                0,
+                500
+              ],
+              [
+                0,
+                600
+              ],
+              [
+                0,
+                700
+              ]
+            ],
+            "metrics": {
+              "upm": 1000,
+              "asc": 1193,
+              "des": -289,
+              "tAsc": 1193,
+              "tDes": -289,
+              "tLGap": 0,
+              "wAsc": 1325,
+              "wDes": 377,
+              "xH": 578,
+              "capH": 810,
+              "yMin": -287,
+              "yMax": 1297,
+              "hAsc": 1193,
+              "hDes": -289,
+              "lGap": 0
+            }
+          },
+          "fontSize": 42,
+          "backgroundColor": {
+            "color": {
+              "r": 196,
+              "g": 196,
+              "b": 196
+            }
+          },
+          "lineHeight": 1.1,
+          "textAlign": "left",
+          "padding": {
+            "locked": true,
+            "horizontal": 0,
+            "vertical": 0
+          },
+          "type": "text",
+          "content": "<span style=\"font-weight: 500; color: #fff; text-transform: uppercase\">A condensed guide to minimalism</span>",
+          "fontWeight": 700,
+          "basedOn": "dd4ac41c-e4fb-451d-977b-9564d3ee28d4",
+          "marginOffset": -16.043999999999997,
+          "x": 41,
+          "y": 403,
+          "width": 287,
+          "height": 154,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "id": "803de1ae-a87d-4cdd-8469-52579b7547f8",
+          "tagName": "h1"
+        },
+        {
+          "opacity": 100,
+          "flip": {
+            "vertical": false,
+            "horizontal": false
+          },
+          "rotationAngle": 0,
+          "lockAspectRatio": true,
+          "backgroundColor": {
+            "color": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "type": "shape",
+          "basedOn": "679372c2-385c-4dcc-ba9b-ebd100e813ee",
+          "x": 41,
+          "y": 563,
+          "width": 331,
+          "height": 1,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "mask": {
+            "type": "rectangle"
+          },
+          "id": "4d1a7c47-4fae-4356-bfee-fba72c3bfbe1"
+        },
+        {
+          "opacity": 100,
+          "flip": {
+            "vertical": false,
+            "horizontal": false
+          },
+          "rotationAngle": 0,
+          "lockAspectRatio": true,
+          "backgroundTextMode": "NONE",
+          "font": {
+            "family": "Roboto Condensed",
+            "service": "fonts.google.com",
+            "fallbacks": [
+              "sans-serif"
+            ],
+            "weights": [
+              300,
+              400,
+              700
+            ],
+            "styles": [
+              "italic",
+              "regular"
+            ],
+            "variants": [
+              [
+                0,
+                300
+              ],
+              [
+                0,
+                400
+              ],
+              [
+                0,
+                700
+              ],
+              [
+                1,
+                300
+              ],
+              [
+                1,
+                400
+              ],
+              [
+                1,
+                700
+              ]
+            ],
+            "metrics": {
+              "upm": 2048,
+              "asc": 1900,
+              "des": -500,
+              "tAsc": 1536,
+              "tDes": -512,
+              "tLGap": 102,
+              "wAsc": 1946,
+              "wDes": 512,
+              "xH": 1082,
+              "capH": 1456,
+              "yMin": -555,
+              "yMax": 2163,
+              "hAsc": 1900,
+              "hDes": -500,
+              "lGap": 0
+            }
+          },
+          "fontSize": 18,
+          "backgroundColor": {
+            "color": {
+              "r": 196,
+              "g": 196,
+              "b": 196
+            }
+          },
+          "lineHeight": 1.5,
+          "textAlign": "left",
+          "padding": {
+            "locked": true,
+            "horizontal": 0,
+            "vertical": 0
+          },
+          "type": "text",
+          "content": "<span style=\"color: #fff\">By Mary Apartment</span>",
+          "fontWeight": 400,
+          "marginOffset": 5.578125,
+          "basedOn": "e7faf544-0b5e-45c0-bd52-3ebad5cc96b3",
+          "x": 41,
+          "y": 572,
+          "width": 163,
+          "height": 21,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "id": "5c305f67-c4bd-46a5-8de6-de60e7366d10",
+          "tagName": "p"
+        },
+        {
+          "opacity": 100,
+          "flip": {
+            "vertical": false,
+            "horizontal": false
+          },
+          "rotationAngle": 0,
+          "lockAspectRatio": true,
+          "backgroundTextMode": "NONE",
+          "font": {
+            "family": "Roboto Condensed",
+            "service": "fonts.google.com",
+            "fallbacks": [
+              "sans-serif"
+            ],
+            "weights": [
+              300,
+              400,
+              700
+            ],
+            "styles": [
+              "italic",
+              "regular"
+            ],
+            "variants": [
+              [
+                0,
+                300
+              ],
+              [
+                0,
+                400
+              ],
+              [
+                0,
+                700
+              ],
+              [
+                1,
+                300
+              ],
+              [
+                1,
+                400
+              ],
+              [
+                1,
+                700
+              ]
+            ],
+            "metrics": {
+              "upm": 2048,
+              "asc": 1900,
+              "des": -500,
+              "tAsc": 1536,
+              "tDes": -512,
+              "tLGap": 102,
+              "wAsc": 1946,
+              "wDes": 512,
+              "xH": 1082,
+              "capH": 1456,
+              "yMin": -555,
+              "yMax": 2163,
+              "hAsc": 1900,
+              "hDes": -500,
+              "lGap": 0
+            }
+          },
+          "fontSize": 18,
+          "backgroundColor": {
+            "color": {
+              "r": 196,
+              "g": 196,
+              "b": 196
+            }
+          },
+          "lineHeight": 1.5,
+          "textAlign": "left",
+          "padding": {
+            "locked": true,
+            "horizontal": 0,
+            "vertical": 0
+          },
+          "type": "text",
+          "content": "<span style=\"color: #fff\">June 29, 2020</span>",
+          "fontWeight": 400,
+          "marginOffset": 5.578125,
+          "basedOn": "5df6e87c-2062-4f33-8049-608df45f5ab0",
+          "x": 272,
+          "y": 572,
+          "width": 122,
+          "height": 21,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "id": "fecd9dce-4270-4313-ad26-0b425c1f28a0",
+          "tagName": "p"
+        }
+      ],
+      "backgroundColor": {
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "type": "page",
+      "id": "9ac6958c-ea84-49ea-8178-b8f913543d8d",
+      "defaultBackgroundElement": {
+        "opacity": 100,
+        "flip": {
+          "vertical": false,
+          "horizontal": false
+        },
+        "rotationAngle": 0,
+        "lockAspectRatio": true,
+        "x": 1,
+        "y": 1,
+        "width": 1,
+        "height": 1,
+        "mask": {
+          "type": "rectangle"
+        },
+        "isBackground": true,
+        "isDefaultBackground": true,
+        "type": "shape",
+        "id": "7da5ba2a-b5d8-4602-bd68-b212ed7f46ab"
+      },
+      "animations": [
+        {
+          "id": "4634c62c-ffa3-4c4f-8ccc-7c95941d3cb2",
+          "type": "effect-fade-in",
+          "targets": [
+            "95e92a1a-0974-43e4-bfeb-1b7425637e4e"
+          ],
+          "duration": 700,
+          "delay": 0
+        },
+        {
+          "id": "373aad20-b631-4cae-aca5-ce90ecbb6036",
+          "type": "effect-fade-in",
+          "duration": 600,
+          "delay": 0,
+          "targets": [
+            "ed8c93b9-b534-4fbe-97c0-01938f76b362"
+          ]
+        },
+        {
+          "id": "bba4c876-ae45-4386-b73a-39ea02240d1e",
+          "type": "effect-fade-in",
+          "duration": 600,
+          "delay": 0,
+          "targets": [
+            "803de1ae-a87d-4cdd-8469-52579b7547f8"
+          ]
+        },
+        {
+          "id": "c8f84846-5277-4260-bb07-2dc83531c90f",
+          "type": "effect-fade-in",
+          "duration": 600,
+          "delay": 0,
+          "targets": [
+            "5c305f67-c4bd-46a5-8de6-de60e7366d10"
+          ]
+        },
+        {
+          "id": "236ac6d8-c0a2-43e1-992f-0070c177f4df",
+          "type": "effect-fade-in",
+          "duration": 600,
+          "delay": 0,
+          "targets": [
+            "fecd9dce-4270-4313-ad26-0b425c1f28a0"
+          ]
+        }
+      ]
+    },
+    {
+      "elements": [
+        {
+          "opacity": 100,
+          "flip": {
+            "vertical": false,
+            "horizontal": false
+          },
+          "rotationAngle": 0,
+          "lockAspectRatio": true,
+          "x": 48,
+          "y": 0,
+          "width": 330,
+          "height": 527,
+          "mask": {
+            "type": "rectangle"
+          },
+          "isBackground": true,
+          "type": "image",
+          "id": "67ac8cc1-8b7d-4830-b296-d92727ac8232",
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "resource": {
+            "baseColor": "#f3c0d9",
+            "blurHash": "LjK]BEIoW?nh}^%2I@bcEexYS6bc",
+            "type": "image",
+            "mimeType": "image/jpeg",
+            "creationDate": "2026-04-27T21:14:23Z",
+            "src": "https://images.unsplash.com/photo-1777324369706-609d83aece87?ixid=M3wxMzcxOTN8MHwxfGFsbHw1fHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=2268&h=3629&fit=max",
+            "width": 2268,
+            "height": 3629,
+            "id": "media/unsplash:v9m4LaVHe7c",
+            "alt": "Abstract pastel curves with orange and purple light",
+            "sizes": {
+              "full": {
+                "file": "media/unsplash:v9m4LaVHe7c",
+                "sourceUrl": "https://images.unsplash.com/photo-1777324369706-609d83aece87?ixid=M3wxMzcxOTN8MHwxfGFsbHw1fHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=2268&h=3629&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 2268,
+                "height": 3629
+              },
+              "large": {
+                "file": "media/unsplash:v9m4LaVHe7c",
+                "sourceUrl": "https://images.unsplash.com/photo-1777324369706-609d83aece87?ixid=M3wxMzcxOTN8MHwxfGFsbHw1fHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=1814&h=2903&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 1814,
+                "height": 2903
+              },
+              "1360_2176": {
+                "file": "media/unsplash:v9m4LaVHe7c",
+                "sourceUrl": "https://images.unsplash.com/photo-1777324369706-609d83aece87?ixid=M3wxMzcxOTN8MHwxfGFsbHw1fHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=1360&h=2176&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 1360,
+                "height": 2176
+              },
+              "907_1451": {
+                "file": "media/unsplash:v9m4LaVHe7c",
+                "sourceUrl": "https://images.unsplash.com/photo-1777324369706-609d83aece87?ixid=M3wxMzcxOTN8MHwxfGFsbHw1fHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=907&h=1451&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 907,
+                "height": 1451
+              },
+              "453_725": {
+                "file": "media/unsplash:v9m4LaVHe7c",
+                "sourceUrl": "https://images.unsplash.com/photo-1777324369706-609d83aece87?ixid=M3wxMzcxOTN8MHwxfGFsbHw1fHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=453&h=725&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 453,
+                "height": 725
+              },
+              "web_stories_thumbnail": {
+                "file": "media/unsplash:v9m4LaVHe7c",
+                "sourceUrl": "https://images.unsplash.com/photo-1777324369706-609d83aece87?ixid=M3wxMzcxOTN8MHwxfGFsbHw1fHx8fHx8fHwxNzc4NTEzNDU0fA&ixlib=rb-4.1.0&fm=jpg&w=340&h=544&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 340,
+                "height": 544
+              }
+            },
+            "attribution": {
+              "author": {
+                "displayName": "Micke Lindström",
+                "url": "https://unsplash.com/@misterlindstrom?utm_source=web_stories_wordpress&utm_medium=referral"
+              },
+              "registerUsageUrl": "https://media3p.googleapis.com/v1/media:registerUsage?token=ASxalWm2UbT3ek2HjwR%2BldFSaECrM1Ed6AfyaaW6IL1enOMpaayv1sGsVdisulyoP7JDQTCQIIFabARx1e9Eh8zFWyNKrGB5VqIw6OJXcka264zLZAgoHgy4dWWGPZoXfKdZimo61MtTpSz%2BhlDlf/rM55ldrNx4kTRJbLsG6lBDHso1wWw4fMUn%2BQGQRBkJG1sxAfnS3KcY63UXCSPqTZyC"
+            },
+            "isPlaceholder": false,
+            "isOptimized": false,
+            "isMuted": false,
+            "isExternal": true,
+            "needsProxy": false
+          }
+        },
+        {
+          "opacity": 100,
+          "flip": {
+            "vertical": false,
+            "horizontal": false
+          },
+          "rotationAngle": 0,
+          "lockAspectRatio": false,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "resource": {
+            "baseColor": "#a6a6a6",
+            "blurHash": "LbGS1AtRMwRPysM|n$t8f-RPsmo#",
+            "type": "image",
+            "mimeType": "image/jpeg",
+            "creationDate": "2026-05-04T14:11:29Z",
+            "src": "https://images.unsplash.com/photo-1777903676132-a4a739224be5?ixid=M3wxMzcxOTN8MHwxfGFsbHwxNnx8fHx8fHx8MTc3ODUxMzQ1NHw&ixlib=rb-4.1.0&fm=jpg&w=3759&h=5639&fit=max",
+            "width": 3759,
+            "height": 5639,
+            "id": "media/unsplash:agcFzelK2yc",
+            "alt": "Woman with binoculars on a boat in a canyon",
+            "sizes": {
+              "full": {
+                "file": "media/unsplash:agcFzelK2yc",
+                "sourceUrl": "https://images.unsplash.com/photo-1777903676132-a4a739224be5?ixid=M3wxMzcxOTN8MHwxfGFsbHwxNnx8fHx8fHx8MTc3ODUxMzQ1NHw&ixlib=rb-4.1.0&fm=jpg&w=3759&h=5639&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 3759,
+                "height": 5639
+              },
+              "large": {
+                "file": "media/unsplash:agcFzelK2yc",
+                "sourceUrl": "https://images.unsplash.com/photo-1777903676132-a4a739224be5?ixid=M3wxMzcxOTN8MHwxfGFsbHwxNnx8fHx8fHx8MTc3ODUxMzQ1NHw&ixlib=rb-4.1.0&fm=jpg&w=3007&h=4511&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 3007,
+                "height": 4511
+              },
+              "2255_3383": {
+                "file": "media/unsplash:agcFzelK2yc",
+                "sourceUrl": "https://images.unsplash.com/photo-1777903676132-a4a739224be5?ixid=M3wxMzcxOTN8MHwxfGFsbHwxNnx8fHx8fHx8MTc3ODUxMzQ1NHw&ixlib=rb-4.1.0&fm=jpg&w=2255&h=3383&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 2255,
+                "height": 3383
+              },
+              "1503_2255": {
+                "file": "media/unsplash:agcFzelK2yc",
+                "sourceUrl": "https://images.unsplash.com/photo-1777903676132-a4a739224be5?ixid=M3wxMzcxOTN8MHwxfGFsbHwxNnx8fHx8fHx8MTc3ODUxMzQ1NHw&ixlib=rb-4.1.0&fm=jpg&w=1503&h=2255&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 1503,
+                "height": 2255
+              },
+              "751_1127": {
+                "file": "media/unsplash:agcFzelK2yc",
+                "sourceUrl": "https://images.unsplash.com/photo-1777903676132-a4a739224be5?ixid=M3wxMzcxOTN8MHwxfGFsbHwxNnx8fHx8fHx8MTc3ODUxMzQ1NHw&ixlib=rb-4.1.0&fm=jpg&w=751&h=1127&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 751,
+                "height": 1127
+              },
+              "web_stories_thumbnail": {
+                "file": "media/unsplash:agcFzelK2yc",
+                "sourceUrl": "https://images.unsplash.com/photo-1777903676132-a4a739224be5?ixid=M3wxMzcxOTN8MHwxfGFsbHwxNnx8fHx8fHx8MTc3ODUxMzQ1NHw&ixlib=rb-4.1.0&fm=jpg&w=340&h=510&fit=max",
+                "mimeType": "image/jpeg",
+                "width": 340,
+                "height": 510
+              }
+            },
+            "attribution": {
+              "author": {
+                "displayName": "sander traa",
+                "url": "https://unsplash.com/@sandertraa?utm_source=web_stories_wordpress&utm_medium=referral"
+              },
+              "registerUsageUrl": "https://media3p.googleapis.com/v1/media:registerUsage?token=ASxalWmu8rZeu3jsKniWCylRv%2BJuY6hLeKq8JdY8SWi%2BvcOzlMnjQMK02Y1qykx3e3CzX8wgmoXPF75QNJg98WBKwPxAwvNS5nd0Niyvmw9guXUQrDEC%2BjK%2BoLuWWSorAwiybcZF4QEAHQ5hTLz/0MAozdDtWC/hLbq2A3sFLD2/ubmCip%2Bx0siUWPOjFGoBOK3rwarFZK5I5l/DgBDCDqQaWQ%3D%3D"
+            },
+            "isPlaceholder": false,
+            "isOptimized": false,
+            "isMuted": false,
+            "isExternal": true,
+            "needsProxy": false
+          },
+          "type": "image",
+          "x": 22,
+          "y": 144,
+          "width": 371,
+          "height": 489,
+          "mask": {
+            "type": "rectangle",
+            "showInLibrary": true,
+            "name": "Rectangle",
+            "path": "M 0,0 1,0 1,1 0,1 0,0 Z",
+            "ratio": 1,
+            "supportsBorder": true
+          },
+          "id": "b6c4209f-8f01-4354-b283-85d82e29caf9",
+          "border": {
+            "left": 8,
+            "right": 8,
+            "top": 8,
+            "bottom": 8,
+            "lockedWidth": true,
+            "color": {
+              "color": {
+                "r": 128,
+                "g": 15,
+                "b": 47
+              }
+            }
+          }
+        }
+      ],
+      "backgroundColor": {
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "type": "page",
+      "id": "917b450d-035f-43c1-ad57-8c551d683992",
+      "defaultBackgroundElement": {
+        "opacity": 100,
+        "flip": {
+          "vertical": false,
+          "horizontal": false
+        },
+        "rotationAngle": 0,
+        "lockAspectRatio": true,
+        "x": 1,
+        "y": 1,
+        "width": 1,
+        "height": 1,
+        "mask": {
+          "type": "rectangle"
+        },
+        "isBackground": true,
+        "isDefaultBackground": true,
+        "type": "shape",
+        "id": "a0a0b5b3-3e06-43f7-96c1-94686b7dada4"
+      },
+      "animations": [
+        {
+          "id": "58b947f4-1d7a-4f8b-bf3d-a023f6873e44",
+          "type": "effect-background-pan",
+          "panDir": "rightToLeft",
+          "duration": 2000,
+          "delay": 0,
+          "targets": [
+            "67ac8cc1-8b7d-4830-b296-d92727ac8232"
+          ]
+        },
+        {
+          "id": "6e4ac5c5-cd3c-485b-845b-96bd54637dc5",
+          "type": "effect-zoom",
+          "scaleDirection": "scaleIn",
+          "duration": 2000,
+          "delay": 0,
+          "targets": [
+            "b6c4209f-8f01-4354-b283-85d82e29caf9"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -7,7 +7,7 @@ import {
   applyTemplate,
   findPlaceholders,
 } from '@googleforcreators/story-player'
-import storyData from './story.json'
+import storyData from './story2.json'
 import { TEMPLATE_PAGES, SAMPLE_USER_PHOTOS } from './templateData'
 
 type Demo = 'fullStory' | 'template' | 'rn'

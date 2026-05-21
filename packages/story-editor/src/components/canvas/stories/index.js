@@ -371,7 +371,7 @@ const AnimationControls = () => {
 
   return (
     <ControlsContainer>
-      <ControlsTitle>Animation Controls</ControlsTitle>
+      <ControlsTitle>Animation Controls !</ControlsTitle>
       <ButtonsContainer>
         <ControlButton 
           onClick={WAAPIAnimationMethods.play}
