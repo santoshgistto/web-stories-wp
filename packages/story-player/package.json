@@ -47,11 +47,11 @@
     "@googleforcreators/react": "*",
     "@googleforcreators/transform": "*",
     "@googleforcreators/units": "*",
+    "react-native-web": "^0.18.12",
     "styled-components": "^5.3.11"
   },
   "devDependencies": {
     "@types/react-native": "^0.73.0",
-    "react": "^17.0.2",
-    "react-native-web": "^0.18.12"
+    "react": "^17.0.2"
   }
 }

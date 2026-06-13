@@ -59,15 +59,30 @@ const PreviewSafeZone = styled.div<{ pageSize: PreviewPageSize }>`
 
 function PreviewPageAnimationController({
   animationState,
+  currentTimeMs,
 }: {
   animationState: string;
+  currentTimeMs?: number;
 }) {
   const WAAPIAnimationMethods = useStoryAnimationContext(
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     ({ actions }: any) => actions.WAAPIAnimationMethods
   );
 
+  // Seek-driven mode: when an explicit time is supplied (e.g. an external
+  // frame clock such as Remotion's), seek every WAAPI animation to that time
+  // instead of letting them play in real time. Animations stay paused at the
+  // requested offset, which makes rendering deterministic frame-by-frame.
   useEffect(() => {
+    if (typeof currentTimeMs === 'number') {
+      WAAPIAnimationMethods.setCurrentTime(currentTimeMs);
+    }
+  }, [currentTimeMs, WAAPIAnimationMethods]);
+
+  useEffect(() => {
+    if (typeof currentTimeMs === 'number') {
+      return;
+    }
     switch (animationState) {
       case StoryAnimationState.Playing:
         WAAPIAnimationMethods.play();
@@ -80,7 +95,7 @@ function PreviewPageAnimationController({
         WAAPIAnimationMethods.pause();
         return;
     }
-  }, [animationState, WAAPIAnimationMethods]);
+  }, [animationState, currentTimeMs, WAAPIAnimationMethods]);
 
   useEffect(
     () => () => WAAPIAnimationMethods.reset(),
@@ -113,6 +128,9 @@ interface PreviewPageProps {
   page: Page;
   pageSize: PreviewPageSize;
   animationState?: string;
+  // When provided, animations are seeked to this time (ms) rather than played
+  // in real time — used to drive rendering from an external frame clock.
+  currentTimeMs?: number;
   onAnimationComplete?: () => void;
 }
 
@@ -121,6 +139,7 @@ const PreviewPage = forwardRef(function PreviewPage(
     page,
     pageSize,
     animationState = StoryAnimationState.Reset,
+    currentTimeMs,
     onAnimationComplete,
   }: PreviewPageProps,
   ref: Ref<HTMLDivElement>
@@ -135,7 +154,10 @@ const PreviewPage = forwardRef(function PreviewPage(
         onWAAPIFinish={onAnimationComplete}
       >
         <PreviewPageDisplay ref={ref} page={page} pageSize={pageSize} />
-        <PreviewPageAnimationController animationState={animationState} />
+        <PreviewPageAnimationController
+          animationState={animationState}
+          currentTimeMs={currentTimeMs}
+        />
       </AnimationProvider>
     </StyleSheetManager>
   );
