@@ -9,11 +9,25 @@ import {
 } from '@googleforcreators/story-player'
 import storyData from './story2.json'
 import { TEMPLATE_PAGES, SAMPLE_USER_PHOTOS } from './templateData'
+import { StoryEditorDemo } from './editor/StoryEditorDemo'
 
-type Demo = 'fullStory' | 'template' | 'rn'
+type Demo = 'fullStory' | 'template' | 'rn' | 'editor'
 
 function App() {
   const [demo, setDemo] = useState<Demo>('template')
+
+  return (
+            <StoryEditorDemo onBack={() => setDemo('template')} />
+  )
+  // The editor takes over the full viewport (it ships its own chrome), so it's
+  // rendered as an overlay rather than inside the centered demo layout.
+  if (demo === 'editor') {
+    return (
+      <ThemeProvider theme={theme}>
+        <StoryEditorDemo onBack={() => setDemo('template')} />
+      </ThemeProvider>
+    )
+  }
 
   return (
     <ThemeProvider theme={theme}>
@@ -46,6 +60,9 @@ function Tabs({ current, onChange }: { current: Demo; onChange: (d: Demo) => voi
       </TabButton>
       <TabButton active={current === 'rn'} onClick={() => onChange('rn')}>
         RN-Web player (image only)
+      </TabButton>
+      <TabButton active={current === 'editor'} onClick={() => onChange('editor')}>
+        Story editor → export JSON/video
       </TabButton>
     </div>
   )

@@ -6,8 +6,10 @@
   },
   "references": [
     { "path": "../animation" },
+    { "path": "../dom" },
     { "path": "../element-library" },
     { "path": "../elements" },
+    { "path": "../fonts" },
     { "path": "../masks" },
     { "path": "../media" },
     { "path": "../patterns" },

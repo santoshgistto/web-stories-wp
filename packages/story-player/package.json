@@ -39,8 +39,10 @@
   },
   "dependencies": {
     "@googleforcreators/animation": "*",
+    "@googleforcreators/dom": "*",
     "@googleforcreators/element-library": "*",
     "@googleforcreators/elements": "*",
+    "@googleforcreators/fonts": "*",
     "@googleforcreators/masks": "*",
     "@googleforcreators/media": "*",
     "@googleforcreators/patterns": "*",

@@ -38,9 +38,22 @@ npm install
 # Preview & tweak compositions in the browser
 npm run dev          # remotion studio
 
-# Render to out/video.mp4
+# Render the bundled story.json to out/video.mp4
 npm run render
+
+# Run the render server (used by the editor's "Export Video" button)
+npm run serve        # POST /render { pages, pageWidth? } -> video/mp4 on :4000
 ```
+
+## Render server
+
+`server.mjs` exposes the render pipeline over HTTP so the story editor (in
+`../story-player-vite-app`, "Story editor" tab) can turn a designed story into
+an MP4: it POSTs `{ pages }` to `POST http://localhost:4000/render` and the
+server returns the video. Pages flow in via Remotion input props, so the
+composition sizes the timeline per story (see `src/Root.tsx`
+`calculateMetadata`). The webpack override is shared with the Studio/CLI via
+`webpackOverride.cjs`.
 
 To render a different story, replace [`src/story.json`](./src/story.json) with an
 exported Web Story document (the `{ pages: [...] }` shape).

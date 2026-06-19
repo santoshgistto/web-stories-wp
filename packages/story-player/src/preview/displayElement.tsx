@@ -42,11 +42,12 @@ import {
 import type { ReactNode } from 'react';
 
 import renderResourcePlaceholder from './renderResourcePlaceholder';
+import { maybeEnqueueFontStyle } from './loadFont';
 
 // In a player there's no editor app context, so we provide inert stubs for
-// the three editor-only hooks DisplayElement consumes. Each stub returns the
-// same shape DisplayElement expects, with safe no-op behavior.
-const NO_OP_FONT_STYLE = () => Promise.resolve();
+// the editor-only hooks DisplayElement consumes (useLocalMedia, useConfig).
+// `maybeEnqueueFontStyle` is NOT stubbed — text elements depend on it to
+// inject Google Fonts CSS; without a real implementation fonts never load.
 const PROXIED_URL_IDENTITY = (_resource: Resource, src?: string) =>
   src ?? null;
 
@@ -149,7 +150,6 @@ function DisplayElement({
   // so we return false unconditionally.
   const getProxiedUrl = PROXIED_URL_IDENTITY;
   const cdnURL = cdnUrl;
-  const maybeEnqueueFontStyle = NO_OP_FONT_STYLE;
   const isCurrentResourceProcessing = () => false;
   const isCurrentResourceUploading = () => false;
 

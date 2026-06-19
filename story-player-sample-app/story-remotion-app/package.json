@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "remotion studio src/index.ts",
     "render": "remotion render src/index.ts StoryVideo out/video.mp4",
+    "serve": "node server.mjs",
     "still": "remotion still src/index.ts StoryVideo out/frame.png",
     "upgrade": "remotion upgrade",
     "typecheck": "tsc --noEmit"
